@@ -3,7 +3,7 @@ package game.logic;
  *
  * @author GonçaloSilva
  */
-public class Dragon extends element{
+public class Dragon extends Element{
   
    
 

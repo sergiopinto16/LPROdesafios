@@ -51,7 +51,6 @@ public class Mapa {
 
     public boolean nextIsDragon(int x, int y,Hero h1,Exiit e1,Dragon d1) { //retorna 1 se for parede
         if (h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY()) {
-
             h1.setLife(false);
             return true;
         }

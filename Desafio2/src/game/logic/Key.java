@@ -4,13 +4,9 @@ package game.logic;
  *
  * @author GonçaloSilva
  */
-public class Key extends element{
+public class Key extends Element{
    //atributos herdados da classe element
 	
-    
-
-	
-
 
 	public Key(int x, int y) {
 		super(x, y);

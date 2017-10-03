@@ -1,7 +1,7 @@
 package game.logic;
 
 
-public class Hero extends element {
+public class Hero extends Element {
     
    
 

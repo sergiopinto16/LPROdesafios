@@ -4,7 +4,7 @@ package game.logic;
  *
  * @author GonçaloSilva
  */
-public class Exiit extends element{
+public class Exiit extends Element{
   
   
 
