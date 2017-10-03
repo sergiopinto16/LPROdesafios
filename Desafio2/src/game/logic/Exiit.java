@@ -6,7 +6,7 @@ package game.logic;
  */
 public class Exiit extends Element{
   
-  
+   
 
 private boolean saida;
  public Exiit(int x, int y) {

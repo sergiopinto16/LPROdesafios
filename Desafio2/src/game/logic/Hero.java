@@ -2,7 +2,7 @@ package game.logic;
 
 
 public class Hero extends Element {
-    
+     
    
 
 	private boolean life;

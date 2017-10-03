@@ -56,7 +56,7 @@ public class Mapa {
         }
         return false;
     }
-
+ 
     public boolean nextIsKey(int x, int y, Hero h1,Exiit e1, Key k1) { //retorna 1 se for parede
         if (h1.getX() + x == k1.getX() && h1.getY() + y == k1.getY()) {
             e1.setSaida(true);

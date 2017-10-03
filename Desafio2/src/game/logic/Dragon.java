@@ -4,7 +4,7 @@ package game.logic;
  * @author GonçaloSilva
  */
 public class Dragon extends Element{
-  
+   
    
 
 	public Dragon(int x, int y) {

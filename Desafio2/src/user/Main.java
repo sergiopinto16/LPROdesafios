@@ -8,7 +8,7 @@ import game.logic.State;
 public class Main {
 
 	private Scanner leitor;
-
+ 
 	public static void main(String[] args) {
 
 		Scanner leitor = new Scanner(System.in);

@@ -114,7 +114,7 @@ public class  State {
         if (c.equals("w")) {
             equal2(-1,0,c);
         } else if (c.equals("s")) {
-        	equal2(1,0,c);
+        	equal2(1,0,c); 
         } else if (c.equals("d")) {
         	equal2(0,1,c);
         } else if (c.equals("a")) {
