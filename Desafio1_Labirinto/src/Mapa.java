@@ -132,6 +132,8 @@ public class Mapa {
 
     public boolean nextIsWall(int x, int y) { //retorna 1 se for parede
         if (this.map[h1.x + x][h1.y + y] == 'X') {
+        	if(h1.x +x== e1.x && h1.y+y==e1.y)
+        		return false;
             return true;
         }
         return false;
@@ -204,8 +206,8 @@ public class Mapa {
     		while(this.map[e1.x][e1.y+a] == 'X' || (e1.x== d1.x && e1.y + (2 * a) == d1.y) ||(e1.x== d1.x && e1.y + a  == d1.y)|| (e1.x + 1== d1.x && e1.y +a == d1.y) || (e1.x + 1== d1.x && e1.y -a == d1.y) );  //saida não tem parede á frente(em y) nem dragao em 2 quadrados de distancia (em y)
     	}
     	
-    	System.out.println(e1.x);
-    	System.out.println(e1.y);
+    	//System.out.println(e1.x);
+    	//System.out.println(e1.y);
     }
     
 ////// GETTERS E SETTERS//////////
