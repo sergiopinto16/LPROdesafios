@@ -3,10 +3,8 @@ package game.logic;
  *
  * @author GonçaloSilva
  */
-public class Dragon {
-  private int x;
-   private int y;
-
+public class Dragon extends element{
+  
     public Dragon(int x, int y) {
         this.x = x;
         this.y = y;

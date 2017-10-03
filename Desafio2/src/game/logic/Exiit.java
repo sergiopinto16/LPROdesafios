@@ -4,9 +4,8 @@ package game.logic;
  *
  * @author GonçaloSilva
  */
-public class Exiit {
-   private int x;
-   private int y;
+public class Exiit extends element{
+  
    private boolean saida;
 
     public Exiit(int x, int y) {

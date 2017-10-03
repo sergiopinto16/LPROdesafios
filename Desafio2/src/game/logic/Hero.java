@@ -1,9 +1,8 @@
 package game.logic;
 
 
-public class Hero {
-    private int x;
-    private  int y;
+public class Hero extends element {
+    
     private boolean life;
     
     //metodos especiais
