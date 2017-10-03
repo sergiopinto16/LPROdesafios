@@ -2,11 +2,7 @@ package user;
 
 import java.util.Scanner;
 
-import game.logic.Dragon;
-import game.logic.Exiit;
-import game.logic.Hero;
-import game.logic.Key;
-import game.logic.Mapa;
+
 import game.logic.State;
 
 public class Main {

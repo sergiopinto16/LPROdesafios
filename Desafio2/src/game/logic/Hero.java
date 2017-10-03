@@ -3,15 +3,16 @@ package game.logic;
 
 public class Hero extends element {
     
-    private boolean life;
+   
+
+	private boolean life;
     
     //metodos especiais
-
-    public Hero(int x, int y) {
-        this.x = x;
-        this.y = y;
-        this.life=true;
-    }
+ public Hero(int x, int y) {
+		super(x, y);
+		this.life=true;
+	}
+   
      public int getX() {
 		return x;
 	}

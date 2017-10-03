@@ -5,10 +5,12 @@ package game.logic;
  */
 public class Dragon extends element{
   
-    public Dragon(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+   
+
+	public Dragon(int x, int y) {
+		super(x, y);
+		
+	}
 
 	public int getX() {
 		return x;

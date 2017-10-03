@@ -7,14 +7,23 @@ package game.logic;
 public class Key extends element{
    //atributos herdados da classe element
 	
-    public Key(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+    
+
+	
+
+
+	public Key(int x, int y) {
+		super(x, y);
+		
+	}
+
+
 
 	public int getX() {
 		return x;
 	}
+
+	
 
 	public void setX(int x) {
 		this.x = x;
