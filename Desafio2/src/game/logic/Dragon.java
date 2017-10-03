@@ -5,27 +5,20 @@ package game.logic;
  */
 public class Dragon extends Element{
    
-   
+   private boolean life;
 
 	public Dragon(int x, int y) {
 		super(x, y);
-		
+		life=true;
 	}
 
-	public int getX() {
-		return x;
+	public boolean getLife() {
+		return life;
 	}
 
-	public void setX(int x) {
-		this.x = x;
+	public void setLife(boolean life) {
+		this.life = life;
 	}
 
-	public int getY() {
-		return y;
-	}
-
-	public void setY(int y) {
-		this.y = y;
-	}
     
 }

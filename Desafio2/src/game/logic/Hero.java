@@ -6,31 +6,42 @@ public class Hero extends Element {
    
 
 	private boolean life;
-    
+	private boolean HeroHas;
+	private String simbolo;
+	
     //metodos especiais
- public Hero(int x, int y) {
+
+	public Hero(int x, int y) {
 		super(x, y);
 		this.life=true;
+		this.HeroHas=false;
+		this.simbolo="H";
 	}
    
-     public int getX() {
-		return x;
-	}
-
-	public void setX(int x) {
-		this.x = x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
-	public void setY(int y) {
-		this.y = y;
-	}
+    
     //metodos
     
+
+	public boolean isHeroHas() {
+		return HeroHas;
+	}
+
+	public void setHeroHas(boolean heroHas) {
+		HeroHas = heroHas;
+		this.setSimbolo("A");
+	}
+
    
+
+	public String getSimbolo() {
+		return simbolo;
+	}
+
+
+	public void setSimbolo(String simbolo) {
+		this.simbolo = simbolo;
+	}
+
 
 	public void mov_up(){
         this.x--;

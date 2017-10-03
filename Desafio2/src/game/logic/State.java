@@ -7,6 +7,7 @@ public class  State {
 	private Key k1;
 	private Dragon d1;
 	private Exiit e1;
+	private Sword s1;
 	private Mapa m1;
 	private boolean state;
 
@@ -36,6 +37,15 @@ public class  State {
 		this.k1 = k1;
 	}
 
+	
+	public Sword getS1() {
+		return s1;
+	}
+
+	public void setS1(Sword s1) {
+		this.s1 = s1;
+	}
+
 	public Dragon getD1() {
 		return d1;
 	}
@@ -63,12 +73,13 @@ public class  State {
 	// metodos
 	public void new_game() {
 		this.h1 = new Hero(1, 1);
-		this.k1 = new Key(5, 8);
+		this.k1 = new Key();
+		this.s1 = new Sword(5, 8);
 		this.d1 = new Dragon(3, 1);
 		this.e1 = new Exiit(9, 3);
 		this.m1 = new Mapa();
 		this.state = false;
-		this.m1.CalcularXYExit(e1,d1,h1,k1);
+		this.m1.CalcularXYExit(e1,d1,h1,s1);
 	}
 	public String next_move(Scanner leitor) {
 		System.out.print("Insira um movimento(w,s,d,a): ");
@@ -99,12 +110,12 @@ public class  State {
             } else {
                 System.out.println("Porta encerrada!");
             }
-        } else if (this.m1.nextIsDragon(x, y,h1,e1,d1)) {
+        } else if (this.m1.nextIsDragon(x, y,h1,e1,d1,s1,k1)) {
             System.out.println("YOU lOSE! GAME OVER!");
             equal(c);
         } else {
-            if (this.m1.nextIsKey(x, y,h1,e1,k1)) {
-                System.out.println("Porta aberta !");
+            if (this.m1.nextIsSword(x, y,h1,e1,s1)) {
+                System.out.println("ESPADA ADQUIRIDA!");
             }
             equal(c);
         }

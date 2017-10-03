@@ -7,4 +7,5 @@ public class Sword extends Element{
 		super(x, y);
 	}
 
+	
 }
