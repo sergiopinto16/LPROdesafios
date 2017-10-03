@@ -1,23 +1,38 @@
+package game.logic;
 
-/**
- *
- * @author GonçaloSilva
- */
+
 public class Hero {
-    public int x;
-    public  int y;
+    private int x;
+    private  int y;
     private boolean life;
     
-    //metodos
+    //metodos especiais
 
     public Hero(int x, int y) {
         this.x = x;
         this.y = y;
         this.life=true;
     }
+     public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
     //metodos
     
-    public void mov_up(){
+   
+
+	public void mov_up(){
         this.x--;
     }
     public void mov_down(){
