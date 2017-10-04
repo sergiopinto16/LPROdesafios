@@ -115,7 +115,8 @@ public class  State {
             equal(c);
         } else {
             if (this.m1.nextIsSword(x, y,h1,e1,s1)) {
-                System.out.println("ESPADA ADQUIRIDA!");
+            	if(!h1.isHeroHas())
+            		System.out.println("ESPADA ADQUIRIDA!");
             }
             equal(c);
         }

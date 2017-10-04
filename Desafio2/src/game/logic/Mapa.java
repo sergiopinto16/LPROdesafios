@@ -55,10 +55,13 @@ public class Mapa {
 																								// parede
 		if (h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY()) {
 			if (h1.isHeroHas()) {
+				if(d1.getLife()) {
 				k1.setChave(true);
 				e1.setSaida(true);
 				d1.setLife(false);
 				System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
+				}
+				// caso o dragao esteja morto não entra no if
 				return false;
 			} else {
 				System.out.println("Heroi não têm espada!");
