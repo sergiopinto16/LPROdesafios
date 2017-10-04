@@ -36,7 +36,9 @@ public class Mapa {
                 if (i == this.h1.x && k == this.h1.y) {
                     System.out.print("H|");
                 } else if (i == this.k1.x && k == this.k1.y) {
-                    System.out.print("K|");
+                	if(!e1.saida)
+                		System.out.print("K|");
+                	else System.out.print(this.map[i][k] + "|");
                 } else if (i == this.d1.x && k == this.d1.y) {
                     System.out.print("D|");
                 } else if (i == this.e1.x && k == this.e1.y) {
@@ -52,7 +54,7 @@ public class Mapa {
     public void movHero(String c) {
         if (c.equals("w")) {
             if (nextIsWall(-1, 0)) {
-                System.out.println("Ã‰ Parede");
+                System.out.println("É Parede");
             } else if (nextIsExit(-1, 0)) {
                 if (this.finish) {
                     h1.mov_up();
@@ -70,7 +72,7 @@ public class Mapa {
             }
         } else if (c.equals("s")) {
             if (nextIsWall(1, 0)) {
-                System.out.println("Ã‰ Parede");
+                System.out.println("É Parede");
             } else if (nextIsExit(1, 0)) {
                 if (this.finish) {
                     h1.mov_down();
@@ -95,7 +97,7 @@ public class Mapa {
                     System.out.println("Porta encerrada!");
                 }
             } else if (nextIsWall(0, 1)) {
-                System.out.println("Ã‰ Parede");
+                System.out.println("É Parede");
             } else if (nextIsDragon(0, 1)) {
                 System.out.println("YOU lOSE! GAME OVER!");
                 h1.mov_right();
@@ -108,7 +110,7 @@ public class Mapa {
 
         } else if (c.equals("a")) {
             if (nextIsWall(0, -1)) {
-                System.out.println("Ã‰ Parede");
+                System.out.println("É Parede");
             } else if (nextIsExit(0, -1)) {
                 if (this.finish) {
                     h1.mov_left();
@@ -163,7 +165,7 @@ public class Mapa {
                 this.finish = true;
                 return true;
             } else {
-                System.out.println("NÃ£o tem a Key");
+                System.out.println("NÃO tem a Key");
                 return true;
             }
         }
@@ -181,7 +183,7 @@ public class Mapa {
     			e1.x=num;
     			e1.y=(rnd.nextInt(8) + 1);
     		}
-    		while(this.map[e1.x + 1][e1.y] == 'X'|| (e1.x + (2*(1))== d1.x  && e1.y == d1.y) ||(e1.x + 1== d1.x && e1.y  == d1.y) || (e1.x + 1== d1.x && e1.y +1 == d1.y) || (e1.x - 1== d1.x && e1.y +1 == d1.y));  //saida não tem parede á frente(em x) nem dragao em 2 quadrados de distancia (em x) nem na diagonal););
+    		while(this.map[e1.x + 1][e1.y] == 'X'|| (e1.x + (2*(1))== d1.x  && e1.y == d1.y) ||(e1.x + 1== d1.x && e1.y  == d1.y) || (e1.x + 1== d1.x && e1.y +1 == d1.y) || (e1.x + 1== d1.x && e1.y -1 == d1.y));  //saida não tem parede á frente(em x) nem dragao em 2 quadrados de distancia (em x) nem na diagonal););
     		
     	}
     	else if(num==9) {
@@ -189,7 +191,7 @@ public class Mapa {
     			e1.x=num;
     			e1.y=(rnd.nextInt(8) + 1);
     		}
-    		while(this.map[e1.x - 1][e1.y] == 'X' || (e1.x + (2*(-1)) == d1.x && e1.y == d1.y) ||(e1.x - 1== d1.x && e1.y  == d1.y)|| (e1.x + 1== d1.x && e1.y -1 == d1.y) || (e1.x - 1== d1.x && e1.y -1 == d1.y));  //saida não tem parede á frente(em x) nem dragao em 2 quadrados de distancia (em x));
+    		while(this.map[e1.x - 1][e1.y] == 'X' || (e1.x + (2*(-1)) == d1.x && e1.y == d1.y) ||(e1.x - 1== d1.x && e1.y  == d1.y)|| (e1.x - 1== d1.x && e1.y -1 == d1.y) || (e1.x - 1== d1.x && e1.y +1 == d1.y));  //saida não tem parede á frente(em x) nem dragao em 2 quadrados de distancia (em x));
     		
     	}
     	else {
@@ -203,7 +205,7 @@ public class Mapa {
     			}
     				e1.x=num;
     		}
-    		while(this.map[e1.x][e1.y+a] == 'X' || (e1.x== d1.x && e1.y + (2 * a) == d1.y) ||(e1.x== d1.x && e1.y + a  == d1.y)|| (e1.x + 1== d1.x && e1.y +a == d1.y) || (e1.x + 1== d1.x && e1.y -a == d1.y) );  //saida não tem parede á frente(em y) nem dragao em 2 quadrados de distancia (em y)
+    		while(this.map[e1.x][e1.y+a] == 'X' || (e1.x== d1.x && e1.y + (2 * a) == d1.y) ||(e1.x== d1.x && e1.y + a  == d1.y)|| (e1.x + 1== d1.x && e1.y +a == d1.y) || (e1.x - 1== d1.x && e1.y +a == d1.y) );  //saida não tem parede á frente(em y) nem dragao em 2 quadrados de distancia (em y)
     	}
     	
     	//System.out.println(e1.x);
