@@ -1,5 +1,6 @@
 package game.logic;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class  State {
@@ -91,17 +92,21 @@ public class  State {
 	//////
 	
 	public void equal(String c){
-		if (c.equals("w"))
+		if (c.equals("w")) {
 			h1.mov_up();
+		}
 		else if(c.equals("s"))
 			h1.mov_down();
 		else if(c.equals("a"))
 			h1.mov_left();
 		else if(c.equals("d"))
 			h1.mov_right();
+		
+		d1.setMove(true);
 	}
 	
 	public void equal2(int x, int y, String c) {
+		d1.setMove(false);
 		if (this.m1.nextIsWall(x, y,h1,e1)) {
             System.out.println("É Parede");
         } else if (this.m1.nextIsExit(x, y,h1,e1)) {
@@ -122,11 +127,11 @@ public class  State {
         }
 	}
 	
-	public void movHero(String c) {
+	public boolean movHero(String c) {
         if (c.equals("w")) {
             equal2(-1,0,c);
         } else if (c.equals("s")) {
-        	equal2(1,0,c); 
+        	equal2(1,0,c);
         } else if (c.equals("d")) {
         	equal2(0,1,c);
         } else if (c.equals("a")) {
@@ -134,7 +139,23 @@ public class  State {
         } else {
             System.out.println("Movimento Incorrecto");
         }
-
+        if(d1.getMove())
+        	return true;
+        return false;
     }
+	
+	
+	
+	public void movDragon() {
+		Random rnd = new Random();
+		
+		int num=0;
+		
+		do{
+			num = (rnd.nextInt(4)+1);
+		}
+		while(!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
 
+		d1.mov_dragon(num);
+	}
 }

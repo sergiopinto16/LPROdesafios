@@ -50,6 +50,13 @@ public class Mapa {
 		}
 		return false;
 	}
+	public boolean nextIsImpToDragon(int x, int y, Dragon d1) { // retorna 1 se for parede
+		if (this.map[d1.getX() + x][d1.getY() + y] == 'X') {
+			return true;
+		}
+		return false;
+	}
+	
 
 	public boolean nextIsDragon(int x, int y, Hero h1, Exiit e1, Dragon d1, Sword s1, Key k1) { // retorna 1 se for
 																								// parede
@@ -147,6 +154,40 @@ public class Mapa {
 		// System.out.println(e1.y);
 	}
 
+	public boolean CorrectMoveDragon(Hero h1, Exiit e1, Dragon d1, Sword s1,int num) {  //1 para cima , 2 direita, 3 baixo, 4 esquerda
+		
+		switch(num) {
+		case 1:  {
+			if(nextIsImpToDragon(-1,0,d1))
+				return false;
+
+			return true;
+			}
+		case 2: {
+			if(nextIsImpToDragon(0, 1, d1))
+				return false;
+
+			return true;
+		}
+		case 3:{
+			if(nextIsImpToDragon(1,0,d1))
+				return false;
+
+			return true;
+		}
+		case 4:{
+			if(nextIsImpToDragon(0,-1,d1))
+				return false;
+
+			return true;
+		}
+		default : return false;
+		}
+		
+	}
+	
+	
+	
 	////// GETTERS E SETTERS//////////
 
 	public boolean getFinish() {
