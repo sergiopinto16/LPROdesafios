@@ -13,7 +13,7 @@ public class Dragon extends Element{
 		life=true;
 		this.move=false;
 	}
-
+	
 	public boolean getLife() {
 		return life;
 	}

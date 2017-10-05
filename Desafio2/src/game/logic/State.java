@@ -1,5 +1,7 @@
 package game.logic;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,9 +13,13 @@ public class  State {
 	private Sword s1;
 	private Mapa m1;
 	private boolean state;
+	private ArrayList<Dragon> ListD;
+	private ArrayList<Dragon> DragonAll;
 
 	// metodos especiais
 
+	
+	
 	public Hero getH1() {
 		return h1;
 	}
@@ -70,21 +76,47 @@ public class  State {
 	public void setM1(Mapa m1) {
 		this.m1 = m1;
 	}
+	
+
+	public ArrayList<Dragon> getListD() {
+		return ListD;
+	}
+
+	public void setListD(ArrayList<Dragon> listD) {
+		ListD = listD;
+	}
 
 	// metodos
-	public void new_game() {
+	public void new_game(int DragonNumber,int[] l) {
+		
 		this.h1 = new Hero(1, 1);
 		this.k1 = new Key();
-		this.s1 = new Sword(5, 8);
-		this.d1 = new Dragon(3, 1);
+		this.s1 = new Sword(4, 1);
+		
+		ListD = new ArrayList<Dragon>();
+		for(int i=0;i<2*DragonNumber;) {
+			ListD.add(new Dragon(l[i],l[i+1]));
+			i=i+2;
+		}
 		this.e1 = new Exiit(9, 3);
 		this.m1 = new Mapa();
 		this.state = false;
-		this.m1.CalcularXYExit(e1,d1,h1,s1);
+		this.m1.CalcularXYExit(e1,ListD.get(0),h1,s1);
 	}
+	
 	public String next_move(Scanner leitor) {
 		System.out.print("Insira um movimento(w,s,d,a): ");
 		return leitor.nextLine();
+	}
+	
+	public int dragon_number(Scanner leitor) {
+		int num;
+		do{
+			System.out.println("Numero de dragoes no jogo: (max 6)");
+			num=leitor.nextInt();
+		}
+		while((num)<1 && (num)>6);
+		return (num);
 	}
 	public boolean check_state() {
 		return isState();
@@ -106,25 +138,37 @@ public class  State {
 	}
 	
 	public void equal2(int x, int y, String c) {
-		d1.setMove(false);
+
+		boolean canMove=false;
+		String Imprimir="";
+		
+		for(int j=0;j<ListD.size();j++) {
+			d1=ListD.get(j);
+			d1.setMove(false);
+			
 		if (this.m1.nextIsWall(x, y,h1,e1)) {
-            System.out.println("Ã‰ Parede");
+            Imprimir="Há Parede";
         } else if (this.m1.nextIsExit(x, y,h1,e1)) {
             if (this.m1.getFinish()) {
-                equal(c);
+                canMove=true;
             } else {
-                System.out.println("Porta encerrada!");
+                Imprimir="Porta encerrada!";
             }
         } else if (this.m1.nextIsDragon(x, y,h1,e1,d1,s1,k1)) {
-            System.out.println("YOU lOSE! GAME OVER!");
-            equal(c);
+            Imprimir="YOU lOSE! GAME OVER!";
+            canMove=true;
         } else {
             if (this.m1.nextIsSword(x, y,h1,e1,s1)) {
             	if(!h1.isHeroHas())
-            		System.out.println("ESPADA ADQUIRIDA!");
+            		Imprimir="ESPADA ADQUIRIDA!";
             }
-            equal(c);
+            canMove=true;
         }
+		}
+		if(canMove)
+			equal(c);
+		if(!Imprimir.equals(""))
+			System.out.println(Imprimir);
 	}
 	
 	public boolean movHero(String c) {
@@ -138,6 +182,7 @@ public class  State {
         	equal2(0,-1,c);
         } else {
             System.out.println("Movimento Incorrecto");
+            return false;
         }
         if(d1.getMove())
         	return true;
@@ -150,12 +195,15 @@ public class  State {
 		Random rnd = new Random();
 		
 		int num=0;
-		
-		do{
-			num = (rnd.nextInt(4)+1);
+		for(int j=0;j<ListD.size();j++) {
+			d1=ListD.get(j);
+			do{
+				num = (rnd.nextInt(4)+1);
+			}
+			while(!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
+	
+			d1.mov_dragon(num);
 		}
-		while(!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
-
-		d1.mov_dragon(num);
 	}
+	
 }

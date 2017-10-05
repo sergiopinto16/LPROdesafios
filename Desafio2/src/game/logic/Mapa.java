@@ -1,5 +1,7 @@
 package game.logic;
 
+import java.net.SocketTimeoutException;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Mapa {
@@ -15,29 +17,42 @@ public class Mapa {
 	private boolean finish;
 
 	// metodos
-	public void imprimir(Exiit e1, Dragon d1, Hero h1, Sword s1) {
+	public void imprimir(Exiit e1, ArrayList<Dragon> dl1, Hero h1, Sword s1) {
 
+		Dragon d1;
+		String c=""; //o que escrever
 		for (int i = 0; i < 10; i++) {
 			for (int k = 0; k < 10; k++) {
-				if (i == h1.getX() && k == h1.getY()) {
-					System.out.print(h1.getSimbolo() + "|");
-				} else if (i == s1.getX() && k == s1.getY()) {
-					if (!h1.isHeroHas())
-						System.out.print("S|");
-					else
-						System.out.print(this.map[i][k] + "|");
-				} else if (i == d1.getX() && k == d1.getY()) {
-					if (d1.getLife()) {
-						System.out.print("D|");
+				for(int j=0;j<dl1.size();j++) {
+				d1=dl1.get(j);
+				if (i == h1.getX() && k == h1.getY()) {			//representar heroi
+					c=h1.getSimbolo() + "|";
+				} else if (i == s1.getX() && k == s1.getY()) {		//representar SWORD
+					if (!h1.isHeroHas()) {
+						if (s1.getX() == d1.getX() && s1.getY() == d1.getY()) {
+							c="F|";
+						} else
+							c="S|";
 					} else
-						System.out.print(this.map[i][k] + "|");
-
-				} else if (i == e1.getX() && k == e1.getY()) {
-					System.out.print("E|");
-				} else {
-					System.out.print(this.map[i][k] + "|");
+						c=this.map[i][k] + "|";
+				} else if (i == d1.getX() && k == d1.getY()) {		//representar DRAGON
+					if (s1.getX() == d1.getX() && s1.getY() == d1.getY()) {
+						// já escreveu na comparação da SWORD (em cima)
+					} else {
+						if (d1.getLife()) {
+							j=dl1.size();  //para sair do ciclo, já não precisa de verificar os proximos dragoes
+							c="D|";
+						} else
+							c=this.map[i][k] + "|";
+					}
+				} else if (i == e1.getX() && k == e1.getY()) {  //representar EXIT
+					c="E|";
+				} else {										//representar "X" ou " " (mapa)
+					c=this.map[i][k] + "|";
 				}
 			}
+				System.out.print(c);
+		}
 			System.out.println("");
 		}
 	}
@@ -50,23 +65,23 @@ public class Mapa {
 		}
 		return false;
 	}
+
 	public boolean nextIsImpToDragon(int x, int y, Dragon d1) { // retorna 1 se for parede
-		if (this.map[d1.getX() + x][d1.getY() + y] == 'X') {
+		if (this.map[d1.getX() + x][d1.getY() + y] == 'X' ) {
 			return true;
 		}
 		return false;
 	}
-	
 
 	public boolean nextIsDragon(int x, int y, Hero h1, Exiit e1, Dragon d1, Sword s1, Key k1) { // retorna 1 se for
 																								// parede
 		if (h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY()) {
 			if (h1.isHeroHas()) {
-				if(d1.getLife()) {
-				k1.setChave(true);
-				e1.setSaida(true);
-				d1.setLife(false);
-				System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
+				if (d1.getLife()) {
+					k1.setChave(true);
+					e1.setSaida(true);
+					d1.setLife(false);
+					System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
 				}
 				// caso o dragao esteja morto não entra no if
 				return false;
@@ -154,40 +169,40 @@ public class Mapa {
 		// System.out.println(e1.y);
 	}
 
-	public boolean CorrectMoveDragon(Hero h1, Exiit e1, Dragon d1, Sword s1,int num) {  //1 para cima , 2 direita, 3 baixo, 4 esquerda
-		
-		switch(num) {
-		case 1:  {
-			if(nextIsImpToDragon(-1,0,d1))
+	public boolean CorrectMoveDragon(Hero h1, Exiit e1, Dragon d1, Sword s1, int num) { // 1 para cima , 2 direita, 3
+																						// baixo, 4 esquerda
+
+		switch (num) {
+		case 1: {
+			if (nextIsImpToDragon(-1, 0, d1))
 				return false;
 
 			return true;
-			}
+		}
 		case 2: {
-			if(nextIsImpToDragon(0, 1, d1))
+			if (nextIsImpToDragon(0, 1, d1))
 				return false;
 
 			return true;
 		}
-		case 3:{
-			if(nextIsImpToDragon(1,0,d1))
+		case 3: {
+			if (nextIsImpToDragon(1, 0, d1))
 				return false;
 
 			return true;
 		}
-		case 4:{
-			if(nextIsImpToDragon(0,-1,d1))
+		case 4: {
+			if (nextIsImpToDragon(0, -1, d1))
 				return false;
 
 			return true;
 		}
-		default : return false;
+		default:
+			return false;
 		}
-		
+
 	}
-	
-	
-	
+
 	////// GETTERS E SETTERS//////////
 
 	public boolean getFinish() {
