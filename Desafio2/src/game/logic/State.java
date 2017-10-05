@@ -100,7 +100,7 @@ public class  State {
 		}
 		this.e1 = new Exiit(9, 3);
 		this.m1 = new Mapa();
-		this.state = false;
+		this.state = true;
 		this.m1.CalcularXYExit(e1,ListD.get(0),h1,s1);
 	}
 	
@@ -148,19 +148,26 @@ public class  State {
 			
 		if (this.m1.nextIsWall(x, y,h1,e1)) {
             Imprimir="Há Parede";
+            j=ListD.size();
         } else if (this.m1.nextIsExit(x, y,h1,e1)) {
             if (this.m1.getFinish()) {
+            	j=ListD.size();
                 canMove=true;
             } else {
+            	j=ListD.size();
                 Imprimir="Porta encerrada!";
             }
         } else if (this.m1.nextIsDragon(x, y,h1,e1,d1,s1,k1)) {
+        	j=ListD.size();
             Imprimir="YOU lOSE! GAME OVER!";
+            this.setState(false);
             canMove=true;
         } else {
             if (this.m1.nextIsSword(x, y,h1,e1,s1)) {
-            	if(!h1.isHeroHas())
+            	j=ListD.size();
+            	if(!h1.isHeroHas()) {
             		Imprimir="ESPADA ADQUIRIDA!";
+            	}
             }
             canMove=true;
         }
@@ -203,6 +210,8 @@ public class  State {
 			while(!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
 	
 			d1.mov_dragon(num);
+			if(!m1.CheckHeroLife(h1,d1))	//dragao mata o Hero
+				this.setState(false);
 		}
 	}
 	

@@ -35,11 +35,12 @@ public class Main {
 			s1.getM1().imprimir(s1.getE1(),s1.getListD(),s1.getH1(),s1.getS1());
 
 		
-		while (true) {
+		while (s1.isState()) {
 		
 			String move = s1.next_move(leitor);
 			if(s1.movHero(move)) {
-				s1.movDragon();
+				if(s1.isState()) 
+					s1.movDragon();
 				s1.getM1().imprimir(s1.getE1(),s1.getListD(),s1.getH1(),s1.getS1());
 			}
 			if (s1.getM1().getFinish() || !s1.getH1().isLife()) {
