@@ -6,18 +6,18 @@ package game.logic;
  */
 public class Exiit extends Element {
 
-	private boolean saida;
+	private int saida;
 
 	public Exiit(int x, int y) {
 		super(x, y);
-		this.saida = false;
+		this.saida = 0;
 	}
 
-	public boolean getSaida() {
+	public int getSaida() {
 		return saida;
 	}
 
-	public void setSaida(boolean saida) {
+	public void setSaida(int saida) {
 		this.saida = saida;
 	}
 

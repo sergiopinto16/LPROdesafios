@@ -140,14 +140,14 @@ public class  State {
 		boolean canMove=false;
 		String Imprimir="";
 		
-		for(int j=0;j<ListD.size();j++) {
+		for(int j=0;j<ListD.size();j++) {		//para cada dragão
 			d1=ListD.get(j);
 			d1.setMove(false);
 			
-		if (this.m1.nextIsWall(x, y,h1,e1)) {
+		if (this.m1.nextIsWall(x, y,h1,e1)) {		//Se for parede, já não verifica os proximos dragoes pq não depende de d1
             Imprimir="Há Parede";
             j=ListD.size();
-        } else if (this.m1.nextIsExit(x, y,h1,e1)) {
+        } else if (this.m1.nextIsExit(x, y,h1,e1,ListD.size())) {	//nao depende de d1, o mesmo q nextIsWall
             if (this.m1.getFinish()) {
             	j=ListD.size();
                 canMove=true;

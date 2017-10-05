@@ -97,7 +97,7 @@ public class Mapa {
 			if (h1.isHeroHas()) {
 				if (d1.getLife()) {   // caso o dragao esteja morto não entra no if
 					k1.setChave(true);
-					e1.setSaida(true);
+					e1.setSaida(e1.getSaida()+1);
 					d1.setLife(false);
 					System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
 				}
@@ -120,14 +120,14 @@ public class Mapa {
 		return false;
 	}
 
-	public boolean nextIsExit(int x, int y, Hero h1, Exiit e1) { //
+	public boolean nextIsExit(int x, int y, Hero h1, Exiit e1,int numDrag) { //
 		if (h1.getX() + x == e1.getX() && h1.getY() + y == e1.getY()) {
-			if (e1.getSaida() == true) {
+			if (e1.getSaida() == numDrag) {
 				System.out.println("Parabens! Saida encontrada");
 				this.finish = true;
 				return true;
 			} else {
-				System.out.println("NÃo tem a Key");
+				System.out.println("Existem Dragoes vivos");
 				return true;
 			}
 		}
