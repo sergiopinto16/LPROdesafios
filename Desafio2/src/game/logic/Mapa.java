@@ -20,44 +20,44 @@ public class Mapa {
 	public void imprimir(Exiit e1, ArrayList<Dragon> dl1, Hero h1, Sword s1) {
 
 		Dragon d1;
-		String c=""; //o que escrever
+		String c = ""; // o que escrever
 		for (int i = 0; i < 10; i++) {
 			for (int k = 0; k < 10; k++) {
-				for(int j=0;j<dl1.size();j++) {
-				d1=dl1.get(j);
-				if (i == h1.getX() && k == h1.getY()) {			//representar heroi
-					c=h1.getSimbolo() + "|";
-				} else if (i == s1.getX() && k == s1.getY()) {		//representar SWORD
-					if (!h1.isHeroHas()) {
+				for (int j = 0; j < dl1.size(); j++) {
+					d1 = dl1.get(j);
+					if (i == h1.getX() && k == h1.getY()) { // representar heroi
+						c = h1.getSimbolo() + "|";
+					} else if (i == s1.getX() && k == s1.getY()) { // representar SWORD
+						if (!h1.isHeroHas()) {
+							if (s1.getX() == d1.getX() && s1.getY() == d1.getY()) {
+								j = dl1.size();
+								c = "F|";
+							} else
+								c = "S|";
+						} else
+							c = this.map[i][k] + "|";
+					} else if (i == d1.getX() && k == d1.getY()) { // representar DRAGON
 						if (s1.getX() == d1.getX() && s1.getY() == d1.getY()) {
-							j=dl1.size();
-							c="F|";
-						} else
-							c="S|";
-					} else
-						c=this.map[i][k] + "|";
-				} else if (i == d1.getX() && k == d1.getY()) {		//representar DRAGON
-					if (s1.getX() == d1.getX() && s1.getY() == d1.getY()) {
-						if(h1.isHeroHas()) {
-							j=dl1.size();
-							c="D|";
+							if (h1.isHeroHas()) {
+								j = dl1.size();
+								c = "D|";
+							}
+							// já escreveu na comparação da SWORD (em cima)
+						} else {
+							if (d1.getLife()) {
+								j = dl1.size(); // para sair do ciclo, já não precisa de verificar os proximos dragoes
+								c = "D|";
+							} else
+								c = this.map[i][k] + "|";
 						}
-						// já escreveu na comparação da SWORD (em cima)
-					} else {
-						if (d1.getLife()) {
-							j=dl1.size();  //para sair do ciclo, já não precisa de verificar os proximos dragoes
-							c="D|";
-						} else
-							c=this.map[i][k] + "|";
+					} else if (i == e1.getX() && k == e1.getY()) { // representar EXIT
+						c = "E|";
+					} else { // representar "X" ou " " (mapa)
+						c = this.map[i][k] + "|";
 					}
-				} else if (i == e1.getX() && k == e1.getY()) {  //representar EXIT
-					c="E|";
-				} else {										//representar "X" ou " " (mapa)
-					c=this.map[i][k] + "|";
 				}
-			}
 				System.out.print(c);
-		}
+			}
 			System.out.println("");
 		}
 	}
@@ -72,35 +72,36 @@ public class Mapa {
 	}
 
 	public boolean nextIsImpToDragon(int x, int y, Dragon d1, Hero h1) { // retorna 1 se for parede
-		if (this.map[d1.getX() + x][d1.getY() + y] == 'X' || HeroClose(x,y,d1,h1)) {
+		if (this.map[d1.getX() + x][d1.getY() + y] == 'X' || HeroClose(x, y, d1, h1)) {
 			return true;
 		}
 		return false;
 	}
-	
+
 	public boolean HeroClose(int x, int y, Dragon d1, Hero h1) {
-	
-		if(!h1.isHeroHas()) { //se não tiver espada não pode ficar perto
-			//movimentar-se no y
-			if(y!=0 && d1.getY()+y==h1.getY() && (d1.getX()+1==h1.getX() || d1.getX()-1==h1.getX()))
+
+		if (!h1.isHeroHas()) { // se não tiver espada não pode ficar perto
+			// movimentar-se no y
+			if (y != 0 && d1.getY() + y == h1.getY() && (d1.getX() + 1 == h1.getX() || d1.getX() - 1 == h1.getX()))
 				return true;
-			if(x!=0 && d1.getX()+x==h1.getX() && (d1.getY()+1==h1.getY() || d1.getY()-1==h1.getY()))
+			if (x != 0 && d1.getX() + x == h1.getX() && (d1.getY() + 1 == h1.getY() || d1.getY() - 1 == h1.getY()))
 				return true;
 		}
-		
+
 		return false;
 	}
 
 	public boolean nextIsDragon(int x, int y, Hero h1, Exiit e1, Dragon d1, Sword s1, Key k1) { // retorna 1 se for
-																								// parede
-		if ((h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY())) { 			if (h1.isHeroHas()) {
-				if (d1.getLife()) {
+																								// dragão
+		if (  (h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY()) || (h1.getX() + x == d1.getX() && (h1.getY() + 1== d1.getY() || h1.getY() -1== d1.getY()))  || (h1.getY() + y == d1.getY() && (h1.getX() + 1== d1.getX() || h1.getX() -1== d1.getX()))) { 
+			if (h1.isHeroHas()) {
+				if (d1.getLife()) {   // caso o dragao esteja morto não entra no if
 					k1.setChave(true);
 					e1.setSaida(true);
 					d1.setLife(false);
 					System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
 				}
-				// caso o dragao esteja morto não entra no if
+				
 				return false;
 			} else {
 				System.out.println("Heroi não têm espada!");
@@ -191,25 +192,25 @@ public class Mapa {
 
 		switch (num) {
 		case 1: {
-			if (nextIsImpToDragon(-1, 0, d1,h1))
+			if (nextIsImpToDragon(-1, 0, d1, h1))
 				return false;
 
 			return true;
 		}
 		case 2: {
-			if (nextIsImpToDragon(0, 1, d1,h1))
+			if (nextIsImpToDragon(0, 1, d1, h1))
 				return false;
 
 			return true;
 		}
 		case 3: {
-			if (nextIsImpToDragon(1, 0, d1,h1))
+			if (nextIsImpToDragon(1, 0, d1, h1))
 				return false;
 
 			return true;
 		}
 		case 4: {
-			if (nextIsImpToDragon(0, -1, d1,h1))
+			if (nextIsImpToDragon(0, -1, d1, h1))
 				return false;
 
 			return true;
@@ -221,30 +222,30 @@ public class Mapa {
 	}
 
 	public boolean CheckDragonClose(Hero h1, Dragon d1) {
-		if(h1.getX()+1==d1.getX() && h1.getY()==d1.getY()) {
-			h1.setLife(false);	
+		if (h1.getX() + 1 == d1.getX() && h1.getY() == d1.getY()) {
+			h1.setLife(false);
 			return true;
 		}
-		if(h1.getX()-1==d1.getX() && h1.getY()==d1.getY()){
-			h1.setLife(false);	
+		if (h1.getX() - 1 == d1.getX() && h1.getY() == d1.getY()) {
+			h1.setLife(false);
 			return true;
 		}
-		if(h1.getX()==d1.getX() && h1.getY()+1==d1.getY()){
-			h1.setLife(false);	
+		if (h1.getX() == d1.getX() && h1.getY() + 1 == d1.getY()) {
+			h1.setLife(false);
 			return true;
 		}
-		if(h1.getX()==d1.getX() && h1.getY()-1==d1.getY()){
-			h1.setLife(false);	
+		if (h1.getX() == d1.getX() && h1.getY() - 1 == d1.getY()) {
+			h1.setLife(false);
 			return true;
 		}
-		
+
 		return false;
-		
+
 	}
-	
-	public boolean CheckHeroLife(Hero h1, Dragon d1) {			//returna true se hero ficar vivo
-		if(!h1.isHeroHas()) { //caso hero não têm espada!
-			if((h1.getX()==d1.getX() && h1.getY()==d1.getY()) || CheckDragonClose(h1,d1)) {
+
+	public boolean CheckHeroLife(Hero h1, Dragon d1) { // returna true se hero ficar vivo
+		if (!h1.isHeroHas()) { // caso hero não têm espada!
+			if ((h1.getX() == d1.getX() && h1.getY() == d1.getY()) || CheckDragonClose(h1, d1)) {
 				System.out.println("Dragao atacou Heroi");
 				System.out.println("YOU lOSE! GAME OVER!");
 				return false;
@@ -252,7 +253,7 @@ public class Mapa {
 		}
 		return true;
 	}
-	
+
 	////// GETTERS E SETTERS//////////
 
 	public boolean getFinish() {

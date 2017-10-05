@@ -18,8 +18,6 @@ public class  State {
 
 	// metodos especiais
 
-	
-	
 	public Hero getH1() {
 		return h1;
 	}
