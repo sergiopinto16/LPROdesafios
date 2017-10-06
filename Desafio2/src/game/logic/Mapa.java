@@ -8,10 +8,14 @@ public class Mapa {
 
 	// atributos
 	char[][] map = { { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
-			{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, { 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, { 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-			{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' }, { 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, { 'X', ' ', 'X', 'X', ' ', ' ', ' ', ' ', ' ', 'X' },
+			{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
+			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+			{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' }, 
+			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+			{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+			{ 'X', ' ', 'X', 'X', ' ', ' ', ' ', ' ', ' ', 'X' },
 			{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
 
 	private boolean finish;
@@ -78,6 +82,26 @@ public class Mapa {
 		return false;
 	}
 
+	public boolean DragonIsInCornerTL( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 1 && d1.getY() == 1) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerBL( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 8 && d1.getY() == 1) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerTR(Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 1 && d1.getY() == 8) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerBR( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 8 && d1.getY() == 8) return true;
+		return false;
+	}
+
 	public boolean HeroClose(int x, int y, Dragon d1, Hero h1) {
 
 		if (!h1.isHeroHas()) { // se não tiver espada não pode ficar perto
@@ -93,15 +117,17 @@ public class Mapa {
 
 	public boolean nextIsDragon(int x, int y, Hero h1, Exiit e1, Dragon d1, Sword s1, Key k1) { // retorna 1 se for
 																								// dragão
-		if (  (h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY()) || (h1.getX() + x == d1.getX() && (h1.getY() + 1== d1.getY() || h1.getY() -1== d1.getY()))  || (h1.getY() + y == d1.getY() && (h1.getX() + 1== d1.getX() || h1.getX() -1== d1.getX()))) { 
+		if ((h1.getX() + (2 * x) == d1.getX() && h1.getY() + (2 * y) == d1.getY())
+				|| (h1.getX() + x == d1.getX() && (h1.getY() + 1 == d1.getY() || h1.getY() - 1 == d1.getY()))
+				|| (h1.getY() + y == d1.getY() && (h1.getX() + 1 == d1.getX() || h1.getX() - 1 == d1.getX()))) {
 			if (h1.isHeroHas()) {
-				if (d1.getLife()) {   // caso o dragao esteja morto não entra no if
+				if (d1.getLife()) { // caso o dragao esteja morto não entra no if
 					k1.setChave(true);
-					e1.setSaida(e1.getSaida()+1);
+					e1.setSaida(e1.getSaida() + 1);
 					d1.setLife(false);
 					System.out.println("DRAGÃO MORTO! CHAVE ADQUIRIDA!");
 				}
-				
+
 				return false;
 			} else {
 				System.out.println("Heroi não têm espada!");
@@ -120,7 +146,7 @@ public class Mapa {
 		return false;
 	}
 
-	public boolean nextIsExit(int x, int y, Hero h1, Exiit e1,int numDrag) { //
+	public boolean nextIsExit(int x, int y, Hero h1, Exiit e1, int numDrag) { //
 		if (h1.getX() + x == e1.getX() && h1.getY() + y == e1.getY()) {
 			if (e1.getSaida() == numDrag) {
 				System.out.println("Parabens! Saida encontrada");
@@ -192,7 +218,7 @@ public class Mapa {
 
 		switch (num) {
 		case 1: {
-			if (nextIsImpToDragon(-1, 0, d1, h1))
+			if (nextIsImpToDragon(-1, 0, d1, h1)) // se não for possivel andar para cima, retorna false
 				return false;
 
 			return true;

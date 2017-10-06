@@ -11,12 +11,12 @@ public class Main {
 	public static void main(String[] args) {
 
 		int[] dragonPos=new int[12];
-				dragonPos[0]=3;
+				dragonPos[0]=2;
 				dragonPos[1]=1;
 				dragonPos[2]=8;
 				dragonPos[3]=8;
-				dragonPos[4]=8;
-				dragonPos[5]=4;
+				dragonPos[4]=1;
+				dragonPos[5]=7;
 				dragonPos[6]=8;
 				dragonPos[7]=1;
 				dragonPos[8]=1;
@@ -38,6 +38,7 @@ public class Main {
 		while (s1.isState()) {
 		
 			String move = s1.next_move(leitor);
+			
 			if(s1.movHero(move)) {
 				if(s1.isState()) 
 					s1.movDragon();
