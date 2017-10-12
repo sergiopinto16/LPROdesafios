@@ -64,5 +64,4 @@
   <packagedElement xmi:type="uml:DataType" xmi:id="_xtxz4K9qEeefZKFcSBu1fg" name="Type"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_1P8TEK9qEeefZKFcSBu1fg" name="integer"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_3qK50K9qEeefZKFcSBu1fg" name="string"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_EGXp4K9tEeefZKFcSBu1fg" name="1"/>
 </uml:Model>

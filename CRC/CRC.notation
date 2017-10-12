@@ -323,15 +323,6 @@
     <element xmi:type="uml:Package" href="CRC.uml#_H5HqIK9qEeefZKFcSBu1fg"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5y_ka9qEeefZKFcSBu1fg" x="60" y="100" width="721" height="460"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_EGatMK9tEeefZKFcSBu1fg" type="Package_Shape">
-    <children xmi:type="notation:DecorationNode" xmi:id="_EGgMwK9tEeefZKFcSBu1fg" type="Package_NameLabel"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_EGgMwa9tEeefZKFcSBu1fg" type="Package_PackagedElementCompartment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_EGgMwq9tEeefZKFcSBu1fg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EGgMw69tEeefZKFcSBu1fg"/>
-    </children>
-    <element xmi:type="uml:Package" href="CRC.uml#_EGXp4K9tEeefZKFcSBu1fg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EGatMa9tEeefZKFcSBu1fg" x="848" y="182"/>
-  </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_EFb9Ia9qEeefZKFcSBu1fg" name="diagram_compatibility_version" stringValue="1.3.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_EFb9Iq9qEeefZKFcSBu1fg"/>
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_EFb9I69qEeefZKFcSBu1fg" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
