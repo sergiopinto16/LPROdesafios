@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EA-68K9qEeefZKFcSBu1fg" name="CRC">
-  <packagedElement xmi:type="uml:Package" xmi:id="_H5HqIK9qEeefZKFcSBu1fg" name="GameBlackJack">
+  <packagedElement xmi:type="uml:Package" xmi:id="_H5HqIK9qEeefZKFcSBu1fg" name="GameBlackJack.logic">
     <packagedElement xmi:type="uml:Class" xmi:id="_J8oaAK9qEeefZKFcSBu1fg" name="Carta">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_d34AcK9qEeefZKFcSBu1fg" name="Nome" visibility="private" type="_3qK50K9qEeefZKFcSBu1fg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_4cJJUK9qEeefZKFcSBu1fg" name="valor" visibility="private" type="_1P8TEK9qEeefZKFcSBu1fg"/>
@@ -64,4 +64,5 @@
   <packagedElement xmi:type="uml:DataType" xmi:id="_xtxz4K9qEeefZKFcSBu1fg" name="Type"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_1P8TEK9qEeefZKFcSBu1fg" name="integer"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_3qK50K9qEeefZKFcSBu1fg" name="string"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EGXp4K9tEeefZKFcSBu1fg" name="1"/>
 </uml:Model>
