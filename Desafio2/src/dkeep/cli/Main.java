@@ -1,8 +1,8 @@
-package user;
+package dkeep.cli;
 
 import java.util.Scanner;
 
-import game.logic.State;
+import dkeep.logic.State;
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int[][] dragonPos=new int[6][2];
+	int[][] dragonPos=new int[6][2];
 				dragonPos[0][0]=3;
 				dragonPos[0][1]=1;
 				dragonPos[1][0]=8;

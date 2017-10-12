@@ -1,4 +1,4 @@
-package game.logic;
+package dkeep.logic;
 
 
 public class Hero extends Element {

@@ -1,4 +1,4 @@
-package game.logic;
+package dkeep.logic;
 
 import java.net.SocketTimeoutException;
 import java.util.ArrayList;
