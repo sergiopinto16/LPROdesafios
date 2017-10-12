@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		int[][] dragonPos=new int[6][2];
-				dragonPos[0][0]=2;
+				dragonPos[0][0]=3;
 				dragonPos[0][1]=1;
 				dragonPos[1][0]=8;
 				dragonPos[1][1]=8;
