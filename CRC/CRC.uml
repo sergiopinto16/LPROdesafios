@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EA-68K9qEeefZKFcSBu1fg" name="CRC">
+  <packagedElement xmi:type="uml:Package" xmi:id="_H5HqIK9qEeefZKFcSBu1fg" name="GameBlackJack">
+    <packagedElement xmi:type="uml:Class" xmi:id="_J8oaAK9qEeefZKFcSBu1fg" name="Carta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d34AcK9qEeefZKFcSBu1fg" name="Nome" visibility="private" type="_3qK50K9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4cJJUK9qEeefZKFcSBu1fg" name="valor" visibility="private" type="_1P8TEK9qEeefZKFcSBu1fg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LcBJIK9qEeefZKFcSBu1fg" name="Baralho">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7j0r8K9qEeefZKFcSBu1fg" name="c" visibility="private" type="_J8oaAK9qEeefZKFcSBu1fg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CgOdYK9rEeefZKFcSBu1fg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cg4ksK9rEeefZKFcSBu1fg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Doo28K9rEeefZKFcSBu1fg" name="Baralhar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FiD2sK9rEeefZKFcSBu1fg" name="CartasRestantes"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HIJqwK9rEeefZKFcSBu1fg" name="ResetBaralho"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JQHc0K9rEeefZKFcSBu1fg" name="NextCarta"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_N0fcYK9qEeefZKFcSBu1fg" name="Mão">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MBTyEK9rEeefZKFcSBu1fg" name="Dealer" visibility="private" type="_OjPYwK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NmMsQK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OrgugK9rEeefZKFcSBu1fg" name="Carta" visibility="private" type="_J8oaAK9qEeefZKFcSBu1fg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KHJWAK9sEeefZKFcSBu1fg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KHRR0K9sEeefZKFcSBu1fg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_P_k-cK9rEeefZKFcSBu1fg" name="ValorMao"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RZleUK9rEeefZKFcSBu1fg" name="AddCarta"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OjPYwK9qEeefZKFcSBu1fg" name="Dealer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W4CrEK9rEeefZKFcSBu1fg" name="Baralho" visibility="private" type="_LcBJIK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YeBKYK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Tkl9UK9rEeefZKFcSBu1fg" name="NewGame"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ud2gkK9rEeefZKFcSBu1fg" name="NewCarta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VhEREK9rEeefZKFcSBu1fg" name="MostrarMao"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QvJ2sK9qEeefZKFcSBu1fg" name="Jogador">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z0nJ4K9rEeefZKFcSBu1fg" name="Mao" visibility="private" type="_N0fcYK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_amocsK9rEeefZKFcSBu1fg" name="Dealer" visibility="private" type="_OjPYwK9qEeefZKFcSBu1fg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MWap8K9sEeefZKFcSBu1fg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MWilwK9sEeefZKFcSBu1fg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_br1xQK9rEeefZKFcSBu1fg" name="Aposta" visibility="private" type="_Rqrq0K9qEeefZKFcSBu1fg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgoaUK9sEeefZKFcSBu1fg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgyLUK9sEeefZKFcSBu1fg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dri_MK9rEeefZKFcSBu1fg" name="MostrarMao"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fOyTkK9rEeefZKFcSBu1fg" name="PerderJogo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gQK4EK9rEeefZKFcSBu1fg" name="GanharJogo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hVNNgK9rEeefZKFcSBu1fg" name="PedirCarta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iZ5ksK9rEeefZKFcSBu1fg" name="Apostar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Rqrq0K9qEeefZKFcSBu1fg" name="Aposta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_naYcAK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oyQ08K9rEeefZKFcSBu1fg" name="Saldo" visibility="private" type="_aOgGAK9qEeefZKFcSBu1fg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kVEQ4K9rEeefZKFcSBu1fg" name="ValordaAposta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lhnjkK9rEeefZKFcSBu1fg" name="DinheiroRestanteJogador"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aOgGAK9qEeefZKFcSBu1fg" name="Saldo">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qCtJIK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rigH8K9rEeefZKFcSBu1fg" name="AddDinheiro"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_s8TzgK9rEeefZKFcSBu1fg" name="RemoveDinheiro"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_uXh0UK9rEeefZKFcSBu1fg" name="DinheiroRestanteAoJogador"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xtxz4K9qEeefZKFcSBu1fg" name="Type"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_1P8TEK9qEeefZKFcSBu1fg" name="integer"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_3qK50K9qEeefZKFcSBu1fg" name="string"/>
+</uml:Model>
