@@ -21,8 +21,7 @@ public class Dragon extends Element{
 	public void setLife(boolean life) {
 		this.life = life;
 	}
-	
-	
+
 	
 	public boolean getMove() {
 		return move;
@@ -49,5 +48,27 @@ public class Dragon extends Element{
 		
 	}
 
+	
+	public boolean DragonIsInCornerTL( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 1 && d1.getY() == 1) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerBL( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 8 && d1.getY() == 1) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerTR(Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 1 && d1.getY() == 8) return true;
+		return false;
+	}
+
+	public boolean DragonIsInCornerBR( Dragon d1) { // saber se dragão está no canto
+		if(d1.getX() == 8 && d1.getY() == 8) return true;
+		return false;
+	}
+
+	
     
 }

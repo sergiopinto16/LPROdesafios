@@ -213,7 +213,7 @@ public class State {
 
 			d1.mov_dragon(num);
 			///// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
-			if (m1.DragonIsInCornerTL(d1)) { // verifica se está no canto TOP LEFT
+			if (d1.DragonIsInCornerTL(d1)) { // verifica se está no canto TOP LEFT
 				System.out.println(num);
 				switch (num) {
 				case 1:
@@ -227,7 +227,7 @@ public class State {
 					}
 					break;
 				}
-			} else if (m1.DragonIsInCornerBL(d1)) {// verifica se está no canto BOTTOM LEFT
+			} else if (d1.DragonIsInCornerBL(d1)) {// verifica se está no canto BOTTOM LEFT
 				System.out.println(num);
 				switch (num) {
 				case 2:
@@ -241,7 +241,7 @@ public class State {
 					}
 					break;
 				}
-			} else if (m1.DragonIsInCornerTR(d1)) {// verifica se está no canto TOP RIGHT
+			} else if (d1.DragonIsInCornerTR(d1)) {// verifica se está no canto TOP RIGHT
 				System.out.println(num);
 				switch (num) {
 				case 1:
@@ -255,7 +255,7 @@ public class State {
 					}
 					break;
 				}
-			} else if (m1.DragonIsInCornerBR(d1)) {// verifica se está no canto BOTTOM RIGHT
+			} else if (d1.DragonIsInCornerBR(d1)) {// verifica se está no canto BOTTOM RIGHT
 				System.out.println(num);
 				switch (num) {
 				case 2:

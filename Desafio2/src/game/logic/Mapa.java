@@ -82,26 +82,6 @@ public class Mapa {
 		return false;
 	}
 
-	public boolean DragonIsInCornerTL( Dragon d1) { // saber se dragão está no canto
-		if(d1.getX() == 1 && d1.getY() == 1) return true;
-		return false;
-	}
-
-	public boolean DragonIsInCornerBL( Dragon d1) { // saber se dragão está no canto
-		if(d1.getX() == 8 && d1.getY() == 1) return true;
-		return false;
-	}
-
-	public boolean DragonIsInCornerTR(Dragon d1) { // saber se dragão está no canto
-		if(d1.getX() == 1 && d1.getY() == 8) return true;
-		return false;
-	}
-
-	public boolean DragonIsInCornerBR( Dragon d1) { // saber se dragão está no canto
-		if(d1.getX() == 8 && d1.getY() == 8) return true;
-		return false;
-	}
-
 	public boolean HeroClose(int x, int y, Dragon d1, Hero h1) {
 
 		if (!h1.isHeroHas()) { // se não tiver espada não pode ficar perto

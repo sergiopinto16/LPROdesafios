@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3ocQAK6wEeez26DwtnUOgQ" type="PapyrusUMLClassDiagram" name="NewClassDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_6Qw9IK6wEeez26DwtnUOgQ" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6QzZYK6wEeez26DwtnUOgQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_6QzZYa6wEeez26DwtnUOgQ" type="Package_PackagedElementCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_yd8EkK6xEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_yd9SsK6xEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_yd95wK6xEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_yd95wa6xEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_yeAWAK6xEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zZGFQK6xEeez26DwtnUOgQ" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zZGsUK6xEeez26DwtnUOgQ" key="collapsed" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:Shape" xmi:id="_2k2PkK6xEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_2kZjoK6xEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2k2Pka6xEeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_4kUM8K6xEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_4j_c0K6xEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_4kUM8a6xEeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_yeAWAa6xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_yeAWAq6xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_yeAWA66xEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yeAWBK6xEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_yeAWBa6xEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_8FOH4K6xEeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_8E4JoK6xEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8FOH4a6xEeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_yeAWBq6xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_yeAWB66xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_yeAWCK6xEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yeAWCa6xEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_yeA9EK6xEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_yeA9Ea6xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_yeA9Eq6xEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_yeA9E66xEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yeA9FK6xEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_ycjkgK6xEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yd8Eka6xEeez26DwtnUOgQ" x="5" y="133"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Z0pvwK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Z0qW0K6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_Z0qW0a6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Z0q94K6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Z0q94a6zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_iMar8K6zEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_iL_1MK6zEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iMar8a6zEeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_nz88MK6zEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_nzTb8K6zEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nz88Ma6zEeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_Z0q94q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Z0q9466zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Z0q95K6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0q95a6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Z0rk8K6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_Z0rk8a6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Z0rk8q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Z0rk866zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0rk9K6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Z0rk9a6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_Z0rk9q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Z0rk966zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Z0rk-K6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0rk-a6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_Z0bGQK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0pvwa6zEeez26DwtnUOgQ" x="14" y="332"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_sssMwK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_sssMwq6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_sssMw66zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_sssz0K6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_sssz0a6zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_uMADYK6zEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_uLMLEK6zEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uMADYa6zEeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_sssz0q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_sssz066zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_sssz1K6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sssz1a6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_ssta4K6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_ssta4a6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_ssta4q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_ssta466zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ssta5K6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_ssta5a6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_ssta5q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_ssta566zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_ssta6K6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ssta6a6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_ssXcoK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sssMwa6zEeez26DwtnUOgQ" x="214" y="132"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_0oeXkK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_0oe-oK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_0oe-oa6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0oflsK6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_0oflsa6zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_9lgkAK6zEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_9k4R4K6zEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_9lgkAa6zEeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_-9kjIK6zEeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_-9C-sK6zEeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_-9kjIa6zEeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_AZnqYK60Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_AZK-cK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AZnqYa60Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_0oflsq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_0ofls66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_0ofltK6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oflta6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_0ofltq6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_DrfDwK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_DrHQUK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DrfDwa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_GcQiQK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_Gb5V4K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_GcQiQa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_KNtaoK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_KNTyAK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KNtaoa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_LIj5UK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_LIMs8K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_LIj5Ua60Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_0oflt66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_0ofluK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_0oflua6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0ofluq6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_0oiB8K6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_0oiB8a6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_0oiB8q6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_0oiB866zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oiB9K6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_0oHLMK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oeXka6zEeez26DwtnUOgQ" x="354" y="132"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_3nlNAK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3nlNAq6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_3nl0EK6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3nl0Ea6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_3nl0Eq6zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_No358K60Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_NohUoK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_No358a60Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_3nl0E66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3nl0FK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3nl0Fa6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nl0Fq6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_3nl0F66zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q5A1AK60Eeez26DwtnUOgQ" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q5A1Aa60Eeez26DwtnUOgQ" key="collapsed" value="true"/>
+          </eAnnotations>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_3nl0GK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3nl0Ga6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3nl0Gq6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nl0G66zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_3nl0HK6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_3nl0Ha6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_3nl0Hq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_3nl0H66zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nl0IK6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_3nKWQK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nlNAa6zEeez26DwtnUOgQ" x="514" y="132"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_4tr5cK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_4tsggK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_4tsgga6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4ttHkK6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4ttHka6zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_TzebAK60Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_Ty1h0K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TzebAa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Y51Q0K60Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_Y5ddYK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Y51Q0a60Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_4ttHkq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4ttHk66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4ttHlK6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4ttHla6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4ttHlq6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_bA1ZkK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_bAEkkK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_bA1Zka60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lEYiIK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_lD29sK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lEYiIa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_pBR1gK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_pA3l0K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pBR1ga60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_rVhwEK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_rU9IUK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_rVhwEa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_t3RUEK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_t2q3IK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_t3RUEa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_xtgl0K60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_xtD54K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_xtgl0a60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_zt-BsK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_ztbPIK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zt-Bsa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_1L28AK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_1LdTYK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1L28Aa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_2p9RsK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_2pFvAK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2p9Rsa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_39NpUK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_380nwK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_39NpUa60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_5Ne-YK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_5NCScK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_5Ne-Ya60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_7Ye2UK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_7X6OkK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7Ye2Ua60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_9YhbcK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_9X9awK60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_9Yhbca60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="__DfvgK60Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#__C888K60Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__Dfvga60Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_UIfE4K64Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_UIBx4K64Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_UIfE4a64Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_4ttHl66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4ttHmK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4ttHma6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4ttHmq6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4ttuoK6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_4ttuoa6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4ttuoq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4ttuo66zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4ttupK6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_4tYXcK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4tr5ca6zEeez26DwtnUOgQ" x="174" y="324" width="670"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_5kjQAK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_5kj3EK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_5kj3Ea6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_5kj3Eq6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_5kj3E66zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_FJYIoK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_FI_uIK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FJYIoa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_KzcIcK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_KzDt8K61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KzcIca61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_LxY-cK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_Lw2y8K61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_LxY-ca61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_MknyMK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_MkMUYK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MknyMa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NriW8K61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_NrHgMK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NriW8a61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_OhNasK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_OgtrcK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_OhNasa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_P1MyIK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_P0uRAK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_P1MyIa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Q1ntUK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_Q1B3cK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Q1ntUa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_R5HKoK61Eeez26DwtnUOgQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_R4vXMK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_R5HKoa61Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_5kj3FK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_5kj3Fa6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_5kj3Fq6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kj3F66zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_5kkeIK6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_Xaz4oK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_XaaQAK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Xaz4oa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bVDgoK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_bUp4AK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_bVDgoa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ce3BUK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_cefN4K61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ce3BUa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_eFZhUK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_eE_RoK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_eFZhUa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_fIG7gK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_fHuhAK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fIG7ga61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ft1ewK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_ftYy0K61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ft1ewa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_gmygAK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_gmPtcK61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gmygAa61Eeez26DwtnUOgQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_hcqYEK61Eeez26DwtnUOgQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="TheMazeAndTheDragon.uml#_hcLP4K61Eeez26DwtnUOgQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hcqYEa61Eeez26DwtnUOgQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_5kkeIa6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_5kkeIq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_5kkeI66zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kkeJK6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_5kkeJa6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_5kkeJq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_5kkeJ66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_5kkeKK6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kkeKa6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_5jxz8K6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kjQAa6zEeez26DwtnUOgQ" x="854" y="332"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_6IWgoK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_6IXHsK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_6IXHsa6zEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6IXHsq6zEeez26DwtnUOgQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_6IXHs66zEeez26DwtnUOgQ" type="Class_AttributeCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_6IXHtK6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_6IXHta6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_6IXHtq6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IXHt66zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_6IXHuK6zEeez26DwtnUOgQ" type="Class_OperationCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_6IXHua6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_6IXHuq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_6IXHu66zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IXHvK6zEeez26DwtnUOgQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_6IXHva6zEeez26DwtnUOgQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_6IXHvq6zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_6IXHv66zEeez26DwtnUOgQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_6IXHwK6zEeez26DwtnUOgQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IXHwa6zEeez26DwtnUOgQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_6H_7UK6zEeez26DwtnUOgQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IWgoa6zEeez26DwtnUOgQ" x="654" y="132"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_6QzZYq6wEeez26DwtnUOgQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6QzZY66wEeez26DwtnUOgQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="TheMazeAndTheDragon.uml#_6QkI0K6wEeez26DwtnUOgQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Qw9Ia6wEeez26DwtnUOgQ" x="80" y="40" width="1261" height="600"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_3ocQAa6wEeez26DwtnUOgQ" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_3ocQAq6wEeez26DwtnUOgQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_3ocQA66wEeez26DwtnUOgQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="TheMazeAndTheDragon.uml#_zEQ6MK6wEeez26DwtnUOgQ"/>
+  </styles>
+  <element xmi:type="uml:Model" href="TheMazeAndTheDragon.uml#_zEQ6MK6wEeez26DwtnUOgQ"/>
+</notation:Diagram>
