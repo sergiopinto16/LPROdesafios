@@ -10,19 +10,19 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int[] dragonPos=new int[12];
-				dragonPos[0]=2;
-				dragonPos[1]=1;
-				dragonPos[2]=8;
-				dragonPos[3]=8;
-				dragonPos[4]=1;
-				dragonPos[5]=7;
-				dragonPos[6]=8;
-				dragonPos[7]=1;
-				dragonPos[8]=1;
-				dragonPos[9]=8;
-				dragonPos[10]=5;
-				dragonPos[11]=6;
+		int[][] dragonPos=new int[6][2];
+				dragonPos[0][0]=2;
+				dragonPos[0][1]=1;
+				dragonPos[1][0]=8;
+				dragonPos[1][1]=8;
+				dragonPos[2][0]=1;
+				dragonPos[2][1]=7;
+				dragonPos[3][0]=8;
+				dragonPos[3][1]=1;
+				dragonPos[4][0]=1;
+				dragonPos[4][1]=8;
+				dragonPos[5][0]=5;
+				dragonPos[5][1]=6;
 
 		
 		

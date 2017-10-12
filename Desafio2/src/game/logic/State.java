@@ -84,16 +84,16 @@ public class State {
 	}
 
 	// metodos
-	public void new_game(int DragonNumber, int[] l) {
+	public void new_game(int DragonNumber, int[][] l) {
 
 		this.h1 = new Hero(1, 1);
 		this.k1 = new Key();
 		this.s1 = new Sword(4, 1);
 
 		ListD = new ArrayList<Dragon>();
-		for (int i = 0; i < 2 * DragonNumber;) {
-			ListD.add(new Dragon(l[i], l[i + 1]));
-			i = i + 2;
+		for (int i = 0; i < DragonNumber;) {
+			ListD.add(new Dragon(l[i][0], l[i][1]));
+			i++;
 		}
 		this.e1 = new Exiit(9, 3);
 		this.m1 = new Mapa();
@@ -112,8 +112,8 @@ public class State {
 		while (num < 1 || num > 6) {
 			try {
 				System.out.print("Numero de dragoes no jogo(max 6): ");
-				num = leitor.nextInt();	
-
+				num = leitor.nextInt();
+				leitor.nextLine();
 			} catch (InputMismatchException excepcao) {
 				System.out.println("ERRO!! Apenas inteiros por favor.");
 				leitor.next();
