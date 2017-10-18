@@ -262,7 +262,7 @@ class TestHeroOneAndStaticDragon {
 		stat.setK1(new Key());
 		stat.setS1(new Sword(1,2));
 		
-
+		//commint
 		ArrayList<Dragon> ListHelp = new ArrayList<Dragon>(); //commit
 		ListHelp.add(new Dragon(l[0][0], l[0][1]));
 		stat.setListD(ListHelp);

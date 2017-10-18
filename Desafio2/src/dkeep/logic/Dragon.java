@@ -2,7 +2,7 @@ package dkeep.logic;
 /**
  *
  * @author GonÃ§aloSilva
- */
+ *///commint
 public class Dragon extends Element{
    
    private boolean life;
@@ -49,22 +49,22 @@ public class Dragon extends Element{
 	}
 
 	
-	public boolean DragonIsInCornerTL( Dragon d1) { // saber se dragão está no canto
+	public boolean DragonIsInCornerTL( Dragon d1) { // saber se dragï¿½o estï¿½ no canto
 		if(d1.getX() == 1 && d1.getY() == 1) return true;
 		return false;
 	}
 
-	public boolean DragonIsInCornerBL( Dragon d1) { // saber se dragão está no canto
+	public boolean DragonIsInCornerBL( Dragon d1) { // saber se dragï¿½o estï¿½ no canto
 		if(d1.getX() == 8 && d1.getY() == 1) return true;
 		return false;
 	}
 
-	public boolean DragonIsInCornerTR(Dragon d1) { // saber se dragão está no canto
+	public boolean DragonIsInCornerTR(Dragon d1) { // saber se dragï¿½o estï¿½ no canto
 		if(d1.getX() == 1 && d1.getY() == 8) return true;
 		return false;
 	}
 
-	public boolean DragonIsInCornerBR( Dragon d1) { // saber se dragão está no canto
+	public boolean DragonIsInCornerBR( Dragon d1) { // saber se dragï¿½o estï¿½ no canto
 		if(d1.getX() == 8 && d1.getY() == 8) return true;
 		return false;
 	}

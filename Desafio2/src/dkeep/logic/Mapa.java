@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Mapa {
-
+	//commint
 	// atributos
 	private char[][] map ;
 

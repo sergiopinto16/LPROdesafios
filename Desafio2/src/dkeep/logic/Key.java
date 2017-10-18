@@ -3,7 +3,7 @@ package dkeep.logic;
 /**
  *
  * @author GonçaloSilva
- */
+ *///commint
 public class Key{
 
 	private boolean chave;
