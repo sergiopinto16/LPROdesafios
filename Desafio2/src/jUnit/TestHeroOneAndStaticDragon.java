@@ -1,21 +1,22 @@
 package jUnit;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 import java.util.ArrayList;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import dkeep.logic.*;
 
-class TestHeroOneAndStaticDragon {
+public class TestHeroOneAndStaticDragon {
 
 	//teste considerando 
 	
 	
 	@Test
-	void testHeroMoveFreeCell() {
+	public void testHeroMoveFreeCell() {
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -55,7 +56,7 @@ class TestHeroOneAndStaticDragon {
 	}
 	
 	@Test
-	void testHeroFailsMoveIntoAWall() {
+	public void testHeroFailsMoveIntoAWall() {
 		State s1=new State();
 		int dragonNumber=1;
 		int[][] l=new int[1][2];
@@ -71,7 +72,7 @@ class TestHeroOneAndStaticDragon {
 	}
 	
 	@Test
-	void testHeroTakeSword() {
+	public void testHeroTakeSword() {
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -109,8 +110,8 @@ class TestHeroOneAndStaticDragon {
 	}
 
 	
-/*	@Test
-	void UnarmedHeroMovesIntoACellThatIsAdjacentToADragonAndDies(){
+	@Test
+	public void UnarmedHeroMovesIntoACellThatIsAdjacentToADragonAndDies(){
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -144,13 +145,13 @@ class TestHeroOneAndStaticDragon {
 		
 		stat.movHero("s");
 
-		assertEquals(stat.getD1().getX(),(stat.getE1().getX()+1));
-		assertEquals(stat.getD1().getY(),stat.getE1().getY());
+		assertEquals(stat.getD1().getX(),stat.getH1().getX()+1);
+		assertEquals(stat.getD1().getY(),stat.getH1().getY());
 		assertEquals(false, stat.check_state());
-	}*/
+	}
 	
 	@Test
-	void ArmedHeroMovesIntoACellThatIsAdjacentToADragonAndSlaysHim(){
+	public void ArmedHeroMovesIntoACellThatIsAdjacentToADragonAndSlaysHim(){
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -193,8 +194,8 @@ class TestHeroOneAndStaticDragon {
 	}
 
 	
-/*	@Test
-	void HeroMovesIntoTheExitCellAfterWieldingTheSwordAndKillingTheDragon(){
+	@Test
+	public void HeroMovesIntoTheExitCellAfterWieldingTheSwordAndKillingTheDragon(){
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -233,13 +234,13 @@ class TestHeroOneAndStaticDragon {
 		stat.getD1().setLife(false);
 		
 		stat.movHero("d");
-		assertEquals(true,stat.check_state());
+		assertEquals(false,stat.check_state());
 		
 		
-	}*/
+	}
 	
 	@Test
-	void HeroFailsToMoveIntoTheExitCellWithoutHavingWieldedTheSword(){
+	public void HeroFailsToMoveIntoTheExitCellWithoutHavingWieldedTheSword(){
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -279,7 +280,7 @@ class TestHeroOneAndStaticDragon {
 	
 	
 	@Test
-	void ArmedHeroFailsToMoveIntoTheExitCellWithoutHavingSlainTheDragon(){
+	public void ArmedHeroFailsToMoveIntoTheExitCellWithoutHavingSlainTheDragon(){
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
