@@ -37,7 +37,7 @@ public class Hero extends Element {
 		return simbolo;
 	}
 
-	//commint
+
 	public void setSimbolo(String simbolo) {
 		this.simbolo = simbolo;
 	}

@@ -194,7 +194,7 @@ public class State {
 		if (!Imprimir.equals(""))
 			System.out.println(Imprimir);
 	}
-	//commint
+
 	public boolean movHero(String c) {
 		if (c.equals("w")) {
 			equal2(-1, 0, c);

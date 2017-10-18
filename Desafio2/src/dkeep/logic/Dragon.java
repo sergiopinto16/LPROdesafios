@@ -2,7 +2,7 @@ package dkeep.logic;
 /**
  *
  * @author GonçaloSilva
- *///commint
+ */
 public class Dragon extends Element{
    
    private boolean life;
