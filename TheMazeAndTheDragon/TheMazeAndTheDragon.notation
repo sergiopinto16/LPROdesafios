@@ -3,6 +3,9 @@
   <children xmi:type="notation:Shape" xmi:id="_6Qw9IK6wEeez26DwtnUOgQ" type="Package_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_6QzZYK6wEeez26DwtnUOgQ" type="Package_NameLabel"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_6QzZYa6wEeez26DwtnUOgQ" type="Package_PackagedElementCompartment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-U9RcLQ5Eee1x4FOlCk27w" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-U9RcbQ5Eee1x4FOlCk27w" key="collapsed" value="true"/>
+      </eAnnotations>
       <children xmi:type="notation:Shape" xmi:id="_yd8EkK6xEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_yd9SsK6xEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
         <children xmi:type="notation:DecorationNode" xmi:id="_yd95wK6xEeez26DwtnUOgQ" type="Class_FloatingNameLabel_CN">
@@ -42,7 +45,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yeA9FK6xEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_ycjkgK6xEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yd8Eka6xEeez26DwtnUOgQ" x="54" y="348"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yd8Eka6xEeez26DwtnUOgQ" x="54" y="388"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_Z0pvwK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_Z0qW0K6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -76,7 +79,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0rk-a6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_Z0bGQK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0pvwa6zEeez26DwtnUOgQ" x="494" y="68"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z0pvwa6zEeez26DwtnUOgQ" x="494" y="108"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_sssMwK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_sssMwq6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -106,7 +109,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ssta6a6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_ssXcoK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sssMwa6zEeez26DwtnUOgQ" x="354" y="328"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sssMwa6zEeez26DwtnUOgQ" x="354" y="368"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_0oeXkK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_0oe-oK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -160,7 +163,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oiB9K6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_0oHLMK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oeXka6zEeez26DwtnUOgQ" x="574" y="268" width="161" height="175"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0oeXka6zEeez26DwtnUOgQ" x="574" y="308" width="161" height="200"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_3nlNAK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_3nlNAq6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -193,7 +196,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nl0IK6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_3nKWQK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nlNAa6zEeez26DwtnUOgQ" x="794" y="308"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nlNAa6zEeez26DwtnUOgQ" x="794" y="348"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_4tr5cK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_4tsggK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -287,7 +290,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4ttupK6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_4tYXcK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4tr5ca6zEeez26DwtnUOgQ" x="94" y="608" width="581" height="305"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4tr5ca6zEeez26DwtnUOgQ" x="94" y="648" width="581" height="305"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_5kjQAK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_5kj3EK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -381,7 +384,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kkeKa6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_5jxz8K6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kjQAa6zEeez26DwtnUOgQ" x="774" y="568"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kjQAa6zEeez26DwtnUOgQ" x="774" y="608"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_6IWgoK6zEeez26DwtnUOgQ" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_6IXHsK6zEeez26DwtnUOgQ" type="Class_NameLabel_CN"/>
@@ -407,31 +410,14 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IXHwa6zEeez26DwtnUOgQ"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_6H_7UK6zEeez26DwtnUOgQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IWgoa6zEeez26DwtnUOgQ" x="994" y="288"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IWgoa6zEeez26DwtnUOgQ" x="994" y="328"/>
       </children>
-      <styles xmi:type="notation:TitleStyle" xmi:id="_6QzZYq6wEeez26DwtnUOgQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6QzZY66wEeez26DwtnUOgQ"/>
-    </children>
-    <element xmi:type="uml:Package" href="TheMazeAndTheDragon.uml#_6QkI0K6wEeez26DwtnUOgQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Qw9Ia6wEeez26DwtnUOgQ" x="100" y="-60" width="1341" height="701"/>
-  </children>
-  <children xmi:type="notation:Shape" xmi:id="_-Kka0a9hEeeKG_oQA6OEvg" type="Package_Shape">
-    <children xmi:type="notation:DecorationNode" xmi:id="_-Kka069hEeeKG_oQA6OEvg" type="Package_NameLabel"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_-Kka1K9hEeeKG_oQA6OEvg" type="Package_PackagedElementCompartment">
       <children xmi:type="notation:Shape" xmi:id="_D0powK9iEeeKG_oQA6OEvg" type="Class_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_D0powq9iEeeKG_oQA6OEvg" type="Class_NameLabel_CN"/>
         <children xmi:type="notation:DecorationNode" xmi:id="_D0pow69iEeeKG_oQA6OEvg" type="Class_FloatingNameLabel_CN">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_D0poxK9iEeeKG_oQA6OEvg" y="15"/>
         </children>
         <children xmi:type="notation:BasicCompartment" xmi:id="_D0poxa9iEeeKG_oQA6OEvg" type="Class_AttributeCompartment_CN">
-          <children xmi:type="notation:Shape" xmi:id="_H0rvsK9iEeeKG_oQA6OEvg" type="Property_ClassAttributeLabel">
-            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_H0Y0wK9iEeeKG_oQA6OEvg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_H0rvsa9iEeeKG_oQA6OEvg"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_wdK54K9lEeeKG_oQA6OEvg" type="Property_ClassAttributeLabel">
-            <element xmi:type="uml:Property" href="TheMazeAndTheDragon.uml#_wc3-8K9lEeeKG_oQA6OEvg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_wdK54a9lEeeKG_oQA6OEvg"/>
-          </children>
           <styles xmi:type="notation:TitleStyle" xmi:id="_D0poxq9iEeeKG_oQA6OEvg"/>
           <styles xmi:type="notation:SortingStyle" xmi:id="_D0pox69iEeeKG_oQA6OEvg"/>
           <styles xmi:type="notation:FilteringStyle" xmi:id="_D0poyK9iEeeKG_oQA6OEvg"/>
@@ -454,13 +440,13 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0po069iEeeKG_oQA6OEvg"/>
         </children>
         <element xmi:type="uml:Class" href="TheMazeAndTheDragon.uml#_D0Wt0K9iEeeKG_oQA6OEvg"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0powa9iEeeKG_oQA6OEvg" x="74" y="160"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0powa9iEeeKG_oQA6OEvg" x="1214" y="647"/>
       </children>
-      <styles xmi:type="notation:TitleStyle" xmi:id="_-Kka1a9hEeeKG_oQA6OEvg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Kka1q9hEeeKG_oQA6OEvg"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_6QzZYq6wEeez26DwtnUOgQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6QzZY66wEeez26DwtnUOgQ"/>
     </children>
-    <element xmi:type="uml:Package" href="TheMazeAndTheDragon.uml#_-Kka0K9hEeeKG_oQA6OEvg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Kka0q9hEeeKG_oQA6OEvg" x="1560" y="-20" width="562" height="680"/>
+    <element xmi:type="uml:Package" href="TheMazeAndTheDragon.uml#_6QkI0K6wEeez26DwtnUOgQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Qw9Ia6wEeez26DwtnUOgQ" x="140" y="-120" width="1461" height="1001"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_3ocQAa6wEeez26DwtnUOgQ" name="diagram_compatibility_version" stringValue="1.3.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_3ocQAq6wEeez26DwtnUOgQ"/>
@@ -475,7 +461,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_d0QFsa9fEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Generalization" href="TheMazeAndTheDragon.uml#_dzzZwK9fEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d0QFsq9fEeeKG_oQA6OEvg" points="[580, 280, -643984, -643984]$[580, 260, -643984, -643984]$[640, 260, -643984, -643984]$[640, 184, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d0QFsq9fEeeKG_oQA6OEvg" points="[640, 220, -643984, -643984]$[640, 185, -643984, -643984]$[700, 185, -643984, -643984]$[700, 84, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d4vkIK9fEeeKG_oQA6OEvg" id="(0.8641975308641975,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d4vkIa9fEeeKG_oQA6OEvg" id="(0.35714285714285715,1.0)"/>
   </edges>
@@ -486,9 +472,9 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_hYuSAa9fEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Generalization" href="TheMazeAndTheDragon.uml#_hYRmEK9fEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hYuSAq9fEeeKG_oQA6OEvg" points="[360, 280, -643984, -643984]$[360, 220, -643984, -643984]$[600, 220, -643984, -643984]$[600, 184, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hYuSAq9fEeeKG_oQA6OEvg" points="[420, 240, -643984, -643984]$[420, 145, -643984, -643984]$[660, 145, -643984, -643984]$[660, 84, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hZd44K9fEeeKG_oQA6OEvg" id="(0.8906882591093117,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hZd44a9fEeeKG_oQA6OEvg" id="(0.11904761904761904,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hZd44a9fEeeKG_oQA6OEvg" id="(0.11904761904761904,0.9919354838709677)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_mTVK0K9fEeeKG_oQA6OEvg" type="Generalization_Edge" source="_0oeXkK6zEeez26DwtnUOgQ" target="_Z0pvwK6zEeez26DwtnUOgQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_mTVK069fEeeKG_oQA6OEvg" type="Generalization_StereotypeLabel">
@@ -497,7 +483,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_mTVK0a9fEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Generalization" href="TheMazeAndTheDragon.uml#_mTCP4K9fEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mTVK0q9fEeeKG_oQA6OEvg" points="[680, 240, -643984, -643984]$[680, 184, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mTVK0q9fEeeKG_oQA6OEvg" points="[710, 230, -643984, -643984]$[710, 174, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mUOisK9fEeeKG_oQA6OEvg" id="(0.12422360248447205,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mUOisa9fEeeKG_oQA6OEvg" id="(0.5952380952380952,1.0)"/>
   </edges>
@@ -508,8 +494,8 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_nK8IQa9fEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Generalization" href="TheMazeAndTheDragon.uml#_nKomQK9fEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nK8IQq9fEeeKG_oQA6OEvg" points="[900, 240, -643984, -643984]$[900, 220, -643984, -643984]$[700, 220, -643984, -643984]$[700, 184, -643984, -643984]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nLrvIK9fEeeKG_oQA6OEvg" id="(0.12738853503184713,0.0)"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nK8IQq9fEeeKG_oQA6OEvg" points="[1000, 200, -643984, -643984]$[1000, 140, -643984, -643984]$[760, 140, -643984, -643984]$[760, 84, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nLrvIK9fEeeKG_oQA6OEvg" id="(0.3821656050955414,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nLrvIa9fEeeKG_oQA6OEvg" id="(0.7142857142857143,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_pPkScK9fEeeKG_oQA6OEvg" type="Generalization_Edge" source="_6IWgoK6zEeez26DwtnUOgQ" target="_Z0pvwK6zEeez26DwtnUOgQ">
@@ -519,9 +505,9 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_pPkSca9fEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Generalization" href="TheMazeAndTheDragon.uml#_pPRXgK9fEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pPkScq9fEeeKG_oQA6OEvg" points="[1100, 240, -643984, -643984]$[1100, 200, -643984, -643984]$[740, 200, -643984, -643984]$[740, 184, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pPkScq9fEeeKG_oQA6OEvg" points="[1160, 180, -643984, -643984]$[1160, 125, -643984, -643984]$[780, 125, -643984, -643984]$[780, 84, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pQKvYK9fEeeKG_oQA6OEvg" id="(0.2,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pQKvYa9fEeeKG_oQA6OEvg" id="(1.0,0.967741935483871)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pQKvYa9fEeeKG_oQA6OEvg" id="(0.8333333333333334,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_RItxwK9gEeeKG_oQA6OEvg" type="Association_Edge" source="_5kjQAK6zEeez26DwtnUOgQ" target="_yd8EkK6xEeez26DwtnUOgQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_RItxw69gEeeKG_oQA6OEvg" type="Association_StereotypeLabel">
@@ -562,9 +548,9 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_RItxwa9gEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_RFSqUK9gEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RItxwq9gEeeKG_oQA6OEvg" points="[920, 260, -643984, -643984]$[920, 240, -643984, -643984]$[320, 240, -643984, -643984]$[320, 174, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RItxwq9gEeeKG_oQA6OEvg" points="[960, 460, -643984, -643984]$[960, 425, -643984, -643984]$[445, 425, -643984, -643984]$[360, 425, -643984, -643984]$[360, 374, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RKghgK9gEeeKG_oQA6OEvg" id="(0.10695187165775401,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RKghga9gEeeKG_oQA6OEvg" id="(0.6477732793522267,0.9925925925925926)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RKghga9gEeeKG_oQA6OEvg" id="(0.6477732793522267,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_SBIngK9gEeeKG_oQA6OEvg" type="Association_Edge" source="_5kjQAK6zEeez26DwtnUOgQ" target="_sssMwK6zEeez26DwtnUOgQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_SBIng69gEeeKG_oQA6OEvg" type="Association_StereotypeLabel">
@@ -599,7 +585,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_SBInga9gEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_SAsioK9gEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SBIngq9gEeeKG_oQA6OEvg" points="[960, 260, -643984, -643984]$[960, 180, -643984, -643984]$[760, 180, -643984, -643984]$[560, 180, -643984, -643984]$[560, 124, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SBIngq9gEeeKG_oQA6OEvg" points="[1000, 460, -643984, -643984]$[1000, 400, -643984, -643984]$[600, 400, -643984, -643984]$[600, 324, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SCU6UK9gEeeKG_oQA6OEvg" id="(0.21390374331550802,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SCU6Ua9gEeeKG_oQA6OEvg" id="(0.6172839506172839,1.0)"/>
   </edges>
@@ -636,9 +622,9 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_SvMnYa9gEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_SumxgK9gEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SvMnYq9gEeeKG_oQA6OEvg" points="[1000, 260, -643984, -643984]$[1000, 160, -643984, -643984]$[800, 160, -643984, -643984]$[800, 134, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SvMnYq9gEeeKG_oQA6OEvg" points="[1040, 460, -643984, -643984]$[1040, 380, -643984, -643984]$[840, 380, -643984, -643984]$[840, 360, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SwPwQK9gEeeKG_oQA6OEvg" id="(0.32085561497326204,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SwPwQa9gEeeKG_oQA6OEvg" id="(0.7453416149068323,0.9942857142857143)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SwPwQa9gEeeKG_oQA6OEvg" id="(0.7453416149068323,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_TLaCQK9gEeeKG_oQA6OEvg" type="Association_Edge" source="_5kjQAK6zEeez26DwtnUOgQ" target="_3nlNAK6zEeez26DwtnUOgQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_TLaCQ69gEeeKG_oQA6OEvg" type="Association_StereotypeLabel">
@@ -673,7 +659,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_TLaCQa9gEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_TK9WUK9gEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TLaCQq9gEeeKG_oQA6OEvg" points="[1020, 260, -643984, -643984]$[1020, 104, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TLaCQq9gEeeKG_oQA6OEvg" points="[1050, 250, -643984, -643984]$[1050, 94, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TMJpIK9gEeeKG_oQA6OEvg" id="(0.37433155080213903,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TMJpIa9gEeeKG_oQA6OEvg" id="(0.7643312101910829,1.0)"/>
   </edges>
@@ -710,39 +696,82 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_Tlumwa9gEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_TlR60K9gEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tlumwq9gEeeKG_oQA6OEvg" points="[1120, 400, -643984, -643984]$[1120, 220, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tlumwq9gEeeKG_oQA6OEvg" points="[1150, 390, -643984, -643984]$[1150, 210, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TmxIkK9gEeeKG_oQA6OEvg" id="(0.6951871657754011,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TmxIka9gEeeKG_oQA6OEvg" id="(0.4,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_i2vrAK9mEeeKG_oQA6OEvg" type="Association_Edge" source="_5kjQAK6zEeez26DwtnUOgQ" target="_4tr5cK6zEeez26DwtnUOgQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrA69mEeeKG_oQA6OEvg" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_72NXELQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrBK9mEeeKG_oQA6OEvg" y="-20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrBa9mEeeKG_oQA6OEvg" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_73NcoLQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrBq9mEeeKG_oQA6OEvg" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrB69mEeeKG_oQA6OEvg" type="Association_TargetRoleLabel">
       <styles xmi:type="notation:StringListValueStyle" xmi:id="_kD_hQK9mEeeKG_oQA6OEvg" name="maskLabel">
         <stringListValue>derived</stringListValue>
       </styles>
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrCK9mEeeKG_oQA6OEvg" y="-20"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_74EYQLQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrCK9mEeeKG_oQA6OEvg" x="20" y="-20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrCa9mEeeKG_oQA6OEvg" type="Association_SourceRoleLabel">
       <styles xmi:type="notation:StringListValueStyle" xmi:id="_jkapUK9mEeeKG_oQA6OEvg" name="maskLabel">
         <stringListValue>derived</stringListValue>
       </styles>
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrCq9mEeeKG_oQA6OEvg" y="20"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_75cRQLQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrCq9mEeeKG_oQA6OEvg" x="-20" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrC69mEeeKG_oQA6OEvg" type="Association_SourceMultiplicityLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrDK9mEeeKG_oQA6OEvg" y="20"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_76I00LQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrDK9mEeeKG_oQA6OEvg" x="20" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_i2vrDa9mEeeKG_oQA6OEvg" type="Association_TargetMultiplicityLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrDq9mEeeKG_oQA6OEvg" y="-20"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_761_cLQ5Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i2vrDq9mEeeKG_oQA6OEvg" x="-20" y="-20"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_i2vrAa9mEeeKG_oQA6OEvg"/>
     <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_i2J1IK9mEeeKG_oQA6OEvg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i2vrAq9mEeeKG_oQA6OEvg" points="[880, 300, -643984, -643984]$[781, 300, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i2vrAq9mEeeKG_oQA6OEvg" points="[910, 290, -643984, -643984]$[811, 290, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i3pC4K9mEeeKG_oQA6OEvg" id="(0.0,0.19036144578313252)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i3pC4a9mEeeKG_oQA6OEvg" id="(1.0,0.12786885245901639)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_AFFD4LQ9Eee1x4FOlCk27w" type="Association_Edge" source="_D0powK9iEeeKG_oQA6OEvg" target="_5kjQAK6zEeez26DwtnUOgQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq8LQ9Eee1x4FOlCk27w" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EOg-cLQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq8bQ9Eee1x4FOlCk27w" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq8rQ9Eee1x4FOlCk27w" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EO9qYLQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq87Q9Eee1x4FOlCk27w" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq9LQ9Eee1x4FOlCk27w" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EPZvQLQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <styles xmi:type="notation:StringListValueStyle" xmi:id="_JUCt0LQ9Eee1x4FOlCk27w" name="maskLabel">
+        <stringListValue>derived</stringListValue>
+      </styles>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq9bQ9Eee1x4FOlCk27w" x="6" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq9rQ9Eee1x4FOlCk27w" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EP10ILQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <styles xmi:type="notation:StringListValueStyle" xmi:id="_KptgQLQ9Eee1x4FOlCk27w" name="maskLabel">
+        <stringListValue>derived</stringListValue>
+      </styles>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq97Q9Eee1x4FOlCk27w" x="-5" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq-LQ9Eee1x4FOlCk27w" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EQO1sLQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq-bQ9Eee1x4FOlCk27w" x="6" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AFFq-rQ9Eee1x4FOlCk27w" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_EQmpILQ9Eee1x4FOlCk27w" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AFFq-7Q9Eee1x4FOlCk27w" x="-5" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AFFD4bQ9Eee1x4FOlCk27w"/>
+    <element xmi:type="uml:Association" href="TheMazeAndTheDragon.uml#_AEcKsLQ9Eee1x4FOlCk27w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AFFD4rQ9Eee1x4FOlCk27w" points="[1320, 560, -643984, -643984]$[1293, 560, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AGHlsLQ9Eee1x4FOlCk27w" id="(0.0,0.5769230769230769)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AGHlsbQ9Eee1x4FOlCk27w" id="(1.0,0.2385542168674699)"/>
   </edges>
 </notation:Diagram>

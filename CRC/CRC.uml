@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EA-68K9qEeefZKFcSBu1fg" name="CRC">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EA-68K9qEeefZKFcSBu1fg" name="CRC">
   <packagedElement xmi:type="uml:Package" xmi:id="_H5HqIK9qEeefZKFcSBu1fg" name="GameBlackJack.logic">
     <packagedElement xmi:type="uml:Class" xmi:id="_J8oaAK9qEeefZKFcSBu1fg" name="Carta">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_d34AcK9qEeefZKFcSBu1fg" name="Nome" visibility="private" type="_3qK50K9qEeefZKFcSBu1fg"/>
@@ -42,6 +42,10 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgoaUK9sEeefZKFcSBu1fg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgyLUK9sEeefZKFcSBu1fg" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_n_P147RIEee1x4FOlCk27w" name="aposta" type="_Rqrq0K9qEeefZKFcSBu1fg" association="_n_P14LRIEee1x4FOlCk27w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n_Qc8LRIEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n_Qc8bRIEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_dri_MK9rEeefZKFcSBu1fg" name="MostrarMao"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_fOyTkK9rEeefZKFcSBu1fg" name="PerderJogo"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_gQK4EK9rEeefZKFcSBu1fg" name="GanharJogo"/>
@@ -60,8 +64,91 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_s8TzgK9rEeefZKFcSBu1fg" name="RemoveDinheiro"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_uXh0UK9rEeefZKFcSBu1fg" name="DinheiroRestanteAoJogador"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fgIxALRHEee1x4FOlCk27w" name="Jogo">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fgIxAbRHEee1x4FOlCk27w" name="jogador">
+        <type xmi:type="uml:Class" href="../BlackJack_CRC.uml#_pnejgLQ-Eee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fgIxArRHEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fgIxA7RHEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fgIxBLRHEee1x4FOlCk27w" name="dealer">
+        <type xmi:type="uml:Class" href="../BlackJack_CRC.uml#_rnrgsLQ-Eee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fgIxBbRHEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fgIxBrRHEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fgIxB7RHEee1x4FOlCk27w" name="baralho">
+        <type xmi:type="uml:Class" href="../BlackJack_CRC.uml#_sqclQLQ-Eee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fgIxCLRHEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fgIxCbRHEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1COZcrRHEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_1CNyYLRHEee1x4FOlCk27w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1CPnkLRHEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1CQ1sLRHEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_10YPIrRHEee1x4FOlCk27w" name="dealer" type="_OjPYwK9qEeefZKFcSBu1fg" association="_10XoELRHEee1x4FOlCk27w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10YPI7RHEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10Y2MLRHEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LZhyoLRIEee1x4FOlCk27w" name="baralho" type="_LcBJIK9qEeefZKFcSBu1fg" association="_LZhLkLRIEee1x4FOlCk27w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LZhyobRIEee1x4FOlCk27w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LZhyorRIEee1x4FOlCk27w" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:DataType" xmi:id="_xtxz4K9qEeefZKFcSBu1fg" name="Type"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_1P8TEK9qEeefZKFcSBu1fg" name="integer"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_3qK50K9qEeefZKFcSBu1fg" name="string"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1CNyYLRHEee1x4FOlCk27w" memberEnd="_1COZcrRHEee1x4FOlCk27w _1CSq4LRHEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1COZcLRHEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1COZcbRHEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1CSq4LRHEee1x4FOlCk27w" name="jogo" type="_fgIxALRHEee1x4FOlCk27w" association="_1CNyYLRHEee1x4FOlCk27w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_10XoELRHEee1x4FOlCk27w" memberEnd="_10YPIrRHEee1x4FOlCk27w _10Y2MbRHEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_10YPILRHEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_10YPIbRHEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_10Y2MbRHEee1x4FOlCk27w" name="jogo" type="_fgIxALRHEee1x4FOlCk27w" association="_10XoELRHEee1x4FOlCk27w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4L1OsLRHEee1x4FOlCk27w" memberEnd="_4L11wrRHEee1x4FOlCk27w _4L2c0bRHEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4L11wLRHEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4L11wbRHEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4L2c0bRHEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_4L1OsLRHEee1x4FOlCk27w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4L11wrRHEee1x4FOlCk27w" name="saldo" type="_aOgGAK9qEeefZKFcSBu1fg" aggregation="composite" association="_4L1OsLRHEee1x4FOlCk27w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4L11w7RHEee1x4FOlCk27w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4L2c0LRHEee1x4FOlCk27w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LZhLkLRIEee1x4FOlCk27w" memberEnd="_LZhyoLRIEee1x4FOlCk27w _LZhyo7RIEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LZhLkbRIEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LZhLkrRIEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LZhyo7RIEee1x4FOlCk27w" name="jogo" type="_fgIxALRHEee1x4FOlCk27w" association="_LZhLkLRIEee1x4FOlCk27w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OZI-YLRIEee1x4FOlCk27w" memberEnd="_OZJlcrRIEee1x4FOlCk27w _OZKMgrRIEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OZJlcLRIEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OZJlcbRIEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OZKMgrRIEee1x4FOlCk27w" name="baralho" type="_LcBJIK9qEeefZKFcSBu1fg" association="_OZI-YLRIEee1x4FOlCk27w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OZJlcrRIEee1x4FOlCk27w" name="carta" type="_J8oaAK9qEeefZKFcSBu1fg" aggregation="composite" association="_OZI-YLRIEee1x4FOlCk27w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OZKMgLRIEee1x4FOlCk27w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OZKMgbRIEee1x4FOlCk27w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XQHmILRIEee1x4FOlCk27w" memberEnd="_XQINMbRIEee1x4FOlCk27w _XQINNLRIEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XQHmIbRIEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XQINMLRIEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XQINNLRIEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_XQHmILRIEee1x4FOlCk27w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XQINMbRIEee1x4FOlCk27w" name="mão" type="_N0fcYK9qEeefZKFcSBu1fg" aggregation="composite" association="_XQHmILRIEee1x4FOlCk27w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XQINMrRIEee1x4FOlCk27w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XQINM7RIEee1x4FOlCk27w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_n_P14LRIEee1x4FOlCk27w" memberEnd="_n_P147RIEee1x4FOlCk27w _n_Qc8rRIEee1x4FOlCk27w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n_P14bRIEee1x4FOlCk27w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n_P14rRIEee1x4FOlCk27w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_n_Qc8rRIEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_n_P14LRIEee1x4FOlCk27w"/>
+  </packagedElement>
 </uml:Model>
