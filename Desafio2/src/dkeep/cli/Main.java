@@ -34,6 +34,7 @@ public class Main {
 			s1.new_game(s1.dragon_number(leitor),dragonPos);
 			s1.getM1().imprimir(s1.getE1(),s1.getListD(),s1.getH1(),s1.getS1());
 
+			
 		
 		while (s1.isState()) {
 		

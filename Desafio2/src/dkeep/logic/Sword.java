@@ -3,7 +3,7 @@ package dkeep.logic;
 public class Sword extends Element{ 
 
 	
-	Sword(int x, int y) {
+	public Sword(int x, int y) {
 		super(x, y);
 	}
 
