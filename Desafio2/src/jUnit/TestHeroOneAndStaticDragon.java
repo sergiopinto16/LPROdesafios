@@ -10,7 +10,7 @@ import java.util.ArrayList;
 //import org.junit.jupiter.api.Test;
 import dkeep.logic.*;
 
-public class TestHeroOneAndStaticDragon {
+public class TestHeroOneAndStaticDragon { //s
 
 	//teste considerando 
 	
@@ -232,6 +232,7 @@ public class TestHeroOneAndStaticDragon {
 		//Set Dragon dead
 		stat.getK1().setChave(true);
 		stat.getE1().setSaida(stat.getE1().getSaida() + 1); //set na saida o numero de dragoes mortos
+		stat.getD1().setLife(false);
 		
 		stat.movHero("d");
 		assertEquals(false,stat.check_state());
