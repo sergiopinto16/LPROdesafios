@@ -29,8 +29,10 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_W4CrEK9rEeefZKFcSBu1fg" name="Baralho" visibility="private" type="_LcBJIK9qEeefZKFcSBu1fg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_YeBKYK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_Tkl9UK9rEeefZKFcSBu1fg" name="NewGame"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ud2gkK9rEeefZKFcSBu1fg" name="NewCarta"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_VhEREK9rEeefZKFcSBu1fg" name="MostrarMao"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4NezELTMEeecqdf2gDYZqg" name="PerderJogo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6SOSALTMEeecqdf2gDYZqg" name="GanharJogo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_k507oLTNEeecqdf2gDYZqg" name="Hit"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QvJ2sK9qEeefZKFcSBu1fg" name="Jogador">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Z0nJ4K9rEeefZKFcSBu1fg" name="Mao" visibility="private" type="_N0fcYK9qEeefZKFcSBu1fg"/>
@@ -43,23 +45,30 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgyLUK9sEeefZKFcSBu1fg" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_n_P147RIEee1x4FOlCk27w" name="aposta" type="_Rqrq0K9qEeefZKFcSBu1fg" association="_n_P14LRIEee1x4FOlCk27w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n_Qc8LRIEee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n_Qc8LRIEee1x4FOlCk27w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n_Qc8bRIEee1x4FOlCk27w" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mq0zQLTIEeecqdf2gDYZqg" name="Saldo" visibility="private" type="_aOgGAK9qEeefZKFcSBu1fg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_dri_MK9rEeefZKFcSBu1fg" name="MostrarMao"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_fOyTkK9rEeefZKFcSBu1fg" name="PerderJogo"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_gQK4EK9rEeefZKFcSBu1fg" name="GanharJogo"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_hVNNgK9rEeefZKFcSBu1fg" name="PedirCarta"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_iZ5ksK9rEeefZKFcSBu1fg" name="Apostar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hVNNgK9rEeefZKFcSBu1fg" name="Hit"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iZ5ksK9rEeefZKFcSBu1fg" name="Double"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ad4jALTNEeecqdf2gDYZqg" name="Stand"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QYIZMLTNEeecqdf2gDYZqg" name="Split"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZgrSELTNEeecqdf2gDYZqg" name="Apostar"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Rqrq0K9qEeefZKFcSBu1fg" name="Aposta">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_naYcAK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_oyQ08K9rEeefZKFcSBu1fg" name="Saldo" visibility="private" type="_aOgGAK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oyQ08K9rEeefZKFcSBu1fg" name="Valor" visibility="private" type="_1P8TEK9qEeefZKFcSBu1fg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_kVEQ4K9rEeefZKFcSBu1fg" name="ValordaAposta"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_lhnjkK9rEeefZKFcSBu1fg" name="DinheiroRestanteJogador"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_c9soALTMEeecqdf2gDYZqg" name="DobrarAposta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hdt2kLTMEeecqdf2gDYZqg" name="GanharAposta"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jhAkALTMEeecqdf2gDYZqg" name="PerderAposta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_aOgGAK9qEeefZKFcSBu1fg" name="Saldo">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_qCtJIK9rEeefZKFcSBu1fg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qCtJIK9rEeefZKFcSBu1fg" name="Saldo" visibility="private" type="_1P8TEK9qEeefZKFcSBu1fg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_rigH8K9rEeefZKFcSBu1fg" name="AddDinheiro"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_s8TzgK9rEeefZKFcSBu1fg" name="RemoveDinheiro"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_uXh0UK9rEeefZKFcSBu1fg" name="DinheiroRestanteAoJogador"/>
@@ -80,18 +89,23 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fgIxCLRHEee1x4FOlCk27w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fgIxCbRHEee1x4FOlCk27w" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_1COZcrRHEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_1CNyYLRHEee1x4FOlCk27w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1CPnkLRHEee1x4FOlCk27w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1CQ1sLRHEee1x4FOlCk27w" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_10YPIrRHEee1x4FOlCk27w" name="dealer" type="_OjPYwK9qEeefZKFcSBu1fg" association="_10XoELRHEee1x4FOlCk27w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10YPI7RHEee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10YPI7RHEee1x4FOlCk27w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10Y2MLRHEee1x4FOlCk27w" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_LZhyoLRIEee1x4FOlCk27w" name="baralho" type="_LcBJIK9qEeefZKFcSBu1fg" association="_LZhLkLRIEee1x4FOlCk27w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LZhyobRIEee1x4FOlCk27w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LZhyobRIEee1x4FOlCk27w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LZhyorRIEee1x4FOlCk27w" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GLaf0LTIEeecqdf2gDYZqg" name="Jogador" visibility="private" type="_QvJ2sK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wHzCMLTIEeecqdf2gDYZqg" name="Dealer" visibility="private" type="_OjPYwK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wkBrMLTIEeecqdf2gDYZqg" name="Baralho" visibility="private" type="_LcBJIK9qEeefZKFcSBu1fg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1COZcrRHEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_1CNyYLRHEee1x4FOlCk27w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1CPnkLRHEee1x4FOlCk27w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1CQ1sLRHEee1x4FOlCk27w" value="4"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LUCfILTLEeecqdf2gDYZqg" name="DistribuirPremio"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LzgCULTLEeecqdf2gDYZqg" name="DecidirVencedor"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:DataType" xmi:id="_xtxz4K9qEeefZKFcSBu1fg" name="Type"/>
@@ -131,8 +145,8 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_OZKMgrRIEee1x4FOlCk27w" name="baralho" type="_LcBJIK9qEeefZKFcSBu1fg" association="_OZI-YLRIEee1x4FOlCk27w"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_OZJlcrRIEee1x4FOlCk27w" name="carta" type="_J8oaAK9qEeefZKFcSBu1fg" aggregation="composite" association="_OZI-YLRIEee1x4FOlCk27w">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OZKMgLRIEee1x4FOlCk27w"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OZKMgbRIEee1x4FOlCk27w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OZKMgLRIEee1x4FOlCk27w" value="104"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OZKMgbRIEee1x4FOlCk27w" value="104"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_XQHmILRIEee1x4FOlCk27w" memberEnd="_XQINMbRIEee1x4FOlCk27w _XQINNLRIEee1x4FOlCk27w">
@@ -141,7 +155,7 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_XQINNLRIEee1x4FOlCk27w" name="jogador" type="_QvJ2sK9qEeefZKFcSBu1fg" association="_XQHmILRIEee1x4FOlCk27w"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_XQINMbRIEee1x4FOlCk27w" name="mão" type="_N0fcYK9qEeefZKFcSBu1fg" aggregation="composite" association="_XQHmILRIEee1x4FOlCk27w">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XQINMrRIEee1x4FOlCk27w"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XQINMrRIEee1x4FOlCk27w" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XQINM7RIEee1x4FOlCk27w" value="1"/>
     </ownedEnd>
   </packagedElement>
