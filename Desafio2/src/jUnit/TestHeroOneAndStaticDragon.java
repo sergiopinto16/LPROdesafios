@@ -193,7 +193,6 @@ public class TestHeroOneAndStaticDragon {
 		
 	}
 
-	
 	@Test
 	public void HeroMovesIntoTheExitCellAfterWieldingTheSwordAndKillingTheDragon(){
 		char[][] map = { 
@@ -231,7 +230,8 @@ public class TestHeroOneAndStaticDragon {
 		stat.getH1().setSimbolo("A");
 		stat.getH1().setHeroHas(true);
 		//Set Dragon dead
-		stat.getD1().setLife(false);
+		stat.getK1().setChave(true);
+		stat.getE1().setSaida(stat.getE1().getSaida() + 1); //set na saida o numero de dragoes mortos
 		
 		stat.movHero("d");
 		assertEquals(false,stat.check_state());
