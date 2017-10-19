@@ -224,7 +224,7 @@ public class State {
 			} while (!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
 
 			d1.mov_dragon(num);
-			///// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
+			//////////// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
 			if (d1.DragonIsInCornerTL(d1)) { // verifica se est� no canto TOP LEFT
 				System.out.println(num);
 				switch (num) {
@@ -282,7 +282,7 @@ public class State {
 					break;
 				}
 			}
-
+	///////////////////////////////////////////////////////////////
 			if (!m1.CheckHeroLife(h1, d1)) // dragao mata o Hero
 				this.setState(false);
 		}

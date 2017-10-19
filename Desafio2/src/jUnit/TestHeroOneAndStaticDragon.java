@@ -322,6 +322,47 @@ public class TestHeroOneAndStaticDragon { //s
 		assertEquals(1,stat.getH1().getX());
 		assertEquals(8,stat.getH1().getY());
 	}
+	@Test
+	public void CornerTL(){
+		System.out.println("CornerTL");
+		
+		char[][] map = { 
+				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', ' ', ' ', ' ', ' ', 'X' },
+				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
+		
+		State stat=new State();
+		int dragonNumber=1;
+		int[][] l=new int[1][2];
+		l[0][0]=2;
+		l[0][1]=1;
+		
+		stat.setH1(new Hero(1,8));
+		stat.setK1(new Key());
+		stat.setS1(new Sword(1,2));
+		
 
+		ArrayList<Dragon> ListHelp = new ArrayList<Dragon>();
+		ListHelp.add(new Dragon(l[0][0], l[0][1]));
+		stat.setListD(ListHelp);
+
+		stat.setE1(new Exiit(1, 9));
+		stat.setM1(new Mapa(map));
+		stat.setState(true);
+		
+		stat.getD1(0).mov_dragon(1);
+		stat.movDragon();
+		assertEquals(stat.getD1(0).getX(), 1);
+		assertEquals(stat.getD1(0).getY(), 2);
+
+		
+	}
 	
 }
