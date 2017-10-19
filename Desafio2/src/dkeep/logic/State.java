@@ -51,8 +51,8 @@ public class State {
 		this.s1 = s1;
 	}
 
-	public Dragon getD1() {
-		return d1;
+	public Dragon getD1(int i) {
+		return ListD.get(i);
 	}
 
 	public void setD1(Dragon d1) {

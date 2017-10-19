@@ -145,8 +145,8 @@ public class TestHeroOneAndStaticDragon { //s
 		
 		stat.movHero("s");
 
-		assertEquals(stat.getD1().getX(),stat.getH1().getX()+1);
-		assertEquals(stat.getD1().getY(),stat.getH1().getY());
+		assertEquals(stat.getD1(0).getX(),stat.getH1().getX()+1);
+		assertEquals(stat.getD1(0).getY(),stat.getH1().getY());
 		assertEquals(false, stat.check_state());
 	}
 	
@@ -187,7 +187,7 @@ public class TestHeroOneAndStaticDragon { //s
 		stat.getH1().setSimbolo("A");
 		stat.getH1().setHeroHas(true);
 		stat.movHero("s");
-		assertEquals(false,stat.getD1().getLife());
+		assertEquals(false,stat.getD1(0).getLife());
 		
 		
 		
@@ -195,6 +195,8 @@ public class TestHeroOneAndStaticDragon { //s
 
 	@Test
 	public void HeroMovesIntoTheExitCellAfterWieldingTheSwordAndKillingTheDragon(){
+		System.out.println("HeroMovesIntoTheExitCellAfterWieldingTheSwordAndKillingTheDragon");
+		
 		char[][] map = { 
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
 				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
@@ -232,10 +234,11 @@ public class TestHeroOneAndStaticDragon { //s
 		//Set Dragon dead
 		stat.getK1().setChave(true);
 		stat.getE1().setSaida(stat.getE1().getSaida() + 1); //set na saida o numero de dragoes mortos
-		stat.getD1().setLife(false);
+		stat.getD1(0).setLife(false);
 		
 		stat.movHero("d");
-		assertEquals(false,stat.check_state());
+		System.out.println("FIM!");
+		assertEquals(true,stat.getM1().getFinish());
 		
 		
 	}
