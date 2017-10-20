@@ -15,7 +15,7 @@ public class State {
 	private Mapa m1;
 	private boolean state;
 	private ArrayList<Dragon> ListD;
-	
+	private ArrayList<Dragon> DragonAll;
 
 	// metodos especiais
 
@@ -205,7 +205,7 @@ public class State {
 		} else if (c.equals("a")) {
 			equal2(0, -1, c);
 		} else {
-			System.out.println("Movimento Incorrecto");
+                    System.out.println("Movimento Incorrecto");
 			return false;
 		}
 		if (d1.getMove())
@@ -224,7 +224,7 @@ public class State {
 			} while (!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
 
 			d1.mov_dragon(num);
-			//////////// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
+			///// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
 			if (d1.DragonIsInCornerTL(d1)) { // verifica se est� no canto TOP LEFT
 				System.out.println(num);
 				switch (num) {
@@ -282,7 +282,7 @@ public class State {
 					break;
 				}
 			}
-	///////////////////////////////////////////////////////////////
+
 			if (!m1.CheckHeroLife(h1, d1)) // dragao mata o Hero
 				this.setState(false);
 		}

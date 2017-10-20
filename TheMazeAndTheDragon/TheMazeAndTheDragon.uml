@@ -21,6 +21,18 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedParameter>
         </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3YLRALTzEeeuLs427oi5ZQ" name="DragonIsInCornerBL">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_3YLRAbTzEeeuLs427oi5ZQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_5yL1ULTzEeeuLs427oi5ZQ" name="DragonIsInCornerTL">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5yL1UbTzEeeuLs427oi5ZQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_6l04wLTzEeeuLs427oi5ZQ" name="DragonIsInCornerTR">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_6l04wbTzEeeuLs427oi5ZQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7HNukLTzEeeuLs427oi5ZQ" name="DragonIsInCornerBR">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_7HNukbTzEeeuLs427oi5ZQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
+        </ownedOperation>
       </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ssXcoK6zEeez26DwtnUOgQ" name="Exiit">
@@ -76,18 +88,6 @@
         </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_eFjyAK64Eeez26DwtnUOgQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_gM7uMK64Eeez26DwtnUOgQ" name="h1" type="_0oHLMK6zEeez26DwtnUOgQ"/>
-      </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_pA3l0K60Eeez26DwtnUOgQ" name="DragonIsInCornerTL">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_kOVHEK64Eeez26DwtnUOgQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
-      </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_rU9IUK60Eeez26DwtnUOgQ" name="DragonIsInCornerBL">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mBWj4K64Eeez26DwtnUOgQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
-      </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_t2q3IK60Eeez26DwtnUOgQ" name="DragonIsInCornerTR">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_n6OxEK64Eeez26DwtnUOgQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
-      </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_xtD54K60Eeez26DwtnUOgQ" name="DragonIsInCornerBR">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_pcgcIK64Eeez26DwtnUOgQ" name="d1" type="_ycjkgK6xEeez26DwtnUOgQ"/>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ztbPIK60Eeez26DwtnUOgQ" name="HeroColse">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_tjffoK64Eeez26DwtnUOgQ" name="x">
@@ -170,22 +170,12 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_5jxz8K6zEeez26DwtnUOgQ" name="State">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_FI_uIK61Eeez26DwtnUOgQ" name="h1" visibility="private" type="_0oHLMK6zEeez26DwtnUOgQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_KzDt8K61Eeez26DwtnUOgQ" name="k1" visibility="private" type="_3nKWQK6zEeez26DwtnUOgQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Lw2y8K61Eeez26DwtnUOgQ" name="d1" visibility="private" type="_ycjkgK6xEeez26DwtnUOgQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_MkMUYK61Eeez26DwtnUOgQ" name="e1" visibility="private" type="_ssXcoK6zEeez26DwtnUOgQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_NrHgMK61Eeez26DwtnUOgQ" name="s1" visibility="private" type="_6H_7UK6zEeez26DwtnUOgQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_OgtrcK61Eeez26DwtnUOgQ" name="m1" visibility="private" type="_4tYXcK6zEeez26DwtnUOgQ"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_P0uRAK61Eeez26DwtnUOgQ" name="state" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Q1B3cK61Eeez26DwtnUOgQ" name="ListD" visibility="private" type="_ycjkgK6xEeez26DwtnUOgQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lCZWYK66Eeez26DwtnUOgQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lCjHYK66Eeez26DwtnUOgQ" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_R4vXMK61Eeez26DwtnUOgQ" name="DragonAll" visibility="private" type="_ycjkgK6xEeez26DwtnUOgQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_md-jkK66Eeez26DwtnUOgQ" value="6"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_meHtgK66Eeez26DwtnUOgQ" value="6"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_RIRF0q9gEeeKG_oQA6OEvg" name="dragon" type="_ycjkgK6xEeez26DwtnUOgQ" association="_RFSqUK9gEeeKG_oQA6OEvg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RIRF069gEeeKG_oQA6OEvg" value="1"/>
@@ -252,19 +242,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_6H_7UK6zEeez26DwtnUOgQ" name="Sword">
       <generalization xmi:type="uml:Generalization" xmi:id="_pPRXgK9fEeeKG_oQA6OEvg" general="_Z0bGQK6zEeez26DwtnUOgQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_D0Wt0K9iEeeKG_oQA6OEvg" name="Main">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_AEdY0bQ9Eee1x4FOlCk27w" name="state" type="_5jxz8K6zEeez26DwtnUOgQ" association="_AEcKsLQ9Eee1x4FOlCk27w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AEd_4LQ9Eee1x4FOlCk27w" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AEd_4bQ9Eee1x4FOlCk27w" value="1"/>
-      </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_mWVXUK9mEeeKG_oQA6OEvg" name="main">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_l_V-MK9nEeeKG_oQA6OEvg" name="args">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rmaUYK9nEeeKG_oQA6OEvg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rmkFYK9nEeeKG_oQA6OEvg" value="*"/>
-        </ownedParameter>
-      </ownedOperation>
-    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_RFSqUK9gEeeKG_oQA6OEvg" memberEnd="_RIRF0q9gEeeKG_oQA6OEvg _RIRF1a9gEeeKG_oQA6OEvg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RIRF0K9gEeeKG_oQA6OEvg" source="org.eclipse.papyrus">
@@ -301,12 +278,6 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i2TmIa9mEeeKG_oQA6OEvg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_i2TmJa9mEeeKG_oQA6OEvg" name="state" type="_5jxz8K6zEeez26DwtnUOgQ" association="_i2J1IK9mEeeKG_oQA6OEvg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_AEcKsLQ9Eee1x4FOlCk27w" memberEnd="_AEdY0bQ9Eee1x4FOlCk27w _AEd_4rQ9Eee1x4FOlCk27w">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AEcxwLQ9Eee1x4FOlCk27w" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AEdY0LQ9Eee1x4FOlCk27w" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_AEd_4rQ9Eee1x4FOlCk27w" name="main" type="_D0Wt0K9iEeeKG_oQA6OEvg" association="_AEcKsLQ9Eee1x4FOlCk27w"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lUFAcK6zEeez26DwtnUOgQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lUKgAK6zEeez26DwtnUOgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
