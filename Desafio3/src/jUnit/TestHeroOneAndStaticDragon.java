@@ -322,6 +322,70 @@ public class TestHeroOneAndStaticDragon { //s
 		assertEquals(1,stat.getH1().getX());
 		assertEquals(8,stat.getH1().getY());
 	}
+	
+	@Test
+	public void TestAllFourCornerDragonMovementPossibilities(){
+		System.out.println("TestAll corner dragon move");
+		
+		char[][] map = { 
+				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', ' ', 'X', ' ', ' ', ' ', ' ', ' ', 'X' },
+				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
+		//in map it´s possible all 4 diagonal moves
+		
+		
+		State stat=new State();
+		int dragonNumber=4;
+		//create all 4 dragons
+		int[][] l=new int[4][2];
+		l[0][0]=2; //d1 moves "w" "d" //(1,2)
+		l[0][1]=1;
+		l[1][0]=7; //d2 moves "s" "d" //(8,2)
+		l[1][1]=1;
+		l[2][0]=1; //d3 moves "d" "s" //(2,8)
+		l[2][1]=7;
+		l[3][0]=8; //d4 moves "d" "w" //(7,8)
+		l[3][1]=7;
+		
+		//hero de forma a possibilitar os dragons moves
+		stat.setH1(new Hero(5,4));
+		stat.setK1(new Key());
+		stat.setS1(new Sword(1,2));
+		
 
+		ArrayList<Dragon> ListHelp = new ArrayList<Dragon>();
+		for(int i=0;i<dragonNumber;i++) {
+			ListHelp.add(new Dragon(l[i][0], l[i][1]));
+		}
+		stat.setListD(ListHelp);
+		stat.setE1(new Exiit(4, 9));
+		stat.setM1(new Mapa(map));
+		stat.setState(true);
+		
+		stat.MoveDragonInDiagonal(1,stat.getListD().get(0)); //move dragon 1 na diagonal primeiro para "w"
+		assertEquals(stat.getD1(0).getX(), 1);
+		assertEquals(stat.getD1(0).getY(), 2);
+		
+		stat.MoveDragonInDiagonal(3,stat.getListD().get(1)); //move dragon 2 na diagonal primeiro para "s"
+		assertEquals(stat.getD1(1).getX(), 8);
+		assertEquals(stat.getD1(1).getY(), 2);
+
+		stat.MoveDragonInDiagonal(2,stat.getListD().get(2)); //move dragon 3 na diagonal primeiro para "d"
+		assertEquals(stat.getD1(2).getX(), 2);
+		assertEquals(stat.getD1(2).getY(), 8);
+
+		stat.MoveDragonInDiagonal(2,stat.getListD().get(3)); //move dragon 4 na diagonal primeiro para "d"
+		assertEquals(stat.getD1(3).getX(), 7);
+		assertEquals(stat.getD1(3).getY(), 8);
+
+		
+	}
 	
 }

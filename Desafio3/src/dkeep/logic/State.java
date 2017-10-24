@@ -15,7 +15,7 @@ public class State {
 	private Mapa m1;
 	private boolean state;
 	private ArrayList<Dragon> ListD;
-	private ArrayList<Dragon> DragonAll;
+	
 
 	// metodos especiais
 
@@ -212,7 +212,20 @@ public class State {
 			return true;
 		return false;
 	}
-
+	
+	public boolean MoveDragonInDiagonal(int num,Dragon d1) {
+		if(d1.DragonIsInCorner(d1.testmov_dragon_x(num),d1.testmov_dragon_Y(num))!=0) {
+			d1.mov_dragon(num);
+			if(m1.CorrectMoveDragon(h1, e1, d1, s1, d1.SecondMoveDragon(num, d1.DragonIsInCorner(d1.getX(), d1.getY())))) {
+				d1.mov_dragon(d1.SecondMoveDragon(num, d1.DragonIsInCorner(d1.getX(), d1.getY())));
+				return true;
+			}
+			else 
+				d1.mov_dragon(d1.movInvers(num)); //repõe posição de dragão se não conseguir mover na diagonal
+		}
+		return false;
+	}
+	
 	public void movDragon() {
 		Random rnd = new Random();
 
@@ -222,9 +235,13 @@ public class State {
 			do {
 				num = (rnd.nextInt(4) + 1);
 			} while (!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
-
-			d1.mov_dragon(num);
-			///// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
+			
+			if(!MoveDragonInDiagonal(num,d1)) 
+				d1.mov_dragon(num);
+			
+			
+			/*d1.mov_dragon(num);
+			//////////// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
 			if (d1.DragonIsInCornerTL(d1)) { // verifica se estï¿½ no canto TOP LEFT
 				System.out.println(num);
 				switch (num) {
@@ -281,8 +298,8 @@ public class State {
 					}
 					break;
 				}
-			}
-
+			}*/
+	///////////////////////////////////////////////////////////////
 			if (!m1.CheckHeroLife(h1, d1)) // dragao mata o Hero
 				this.setState(false);
 		}
