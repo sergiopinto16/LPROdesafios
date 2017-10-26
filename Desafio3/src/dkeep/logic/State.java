@@ -15,7 +15,6 @@ public class State {
 	private Mapa m1;
 	private boolean state;
 	private ArrayList<Dragon> ListD;
-	
 
 	// metodos especiais
 
@@ -86,18 +85,16 @@ public class State {
 	// metodos
 	public void new_game(int DragonNumber, int[][] l) {
 
-		char[][] map = { 
-				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
-				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' }, 
+		char[][] map = { { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X' },
 				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
 				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' }, 
 				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
-				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' }, 
+				{ 'X', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
+				{ 'X', ' ', 'X', 'X', ' ', 'X', ' ', 'X', ' ', 'X' },
 				{ 'X', ' ', 'X', 'X', ' ', ' ', ' ', ' ', ' ', 'X' },
 				{ 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
-		
 		this.h1 = new Hero(1, 1);
 		this.k1 = new Key();
 		this.s1 = new Sword(4, 1);
@@ -111,6 +108,8 @@ public class State {
 		this.m1 = new Mapa(map);
 		this.state = true;
 		this.m1.CalcularXYExit(e1, ListD.get(0), h1, s1);
+		
+		
 	}
 
 	public String next_move(Scanner leitor) {
@@ -134,6 +133,22 @@ public class State {
 
 		return (num);
 	}
+	
+	public boolean lerTipoMov(Scanner leitor) {
+		String tipoMov=new String();
+		while (!tipoMov.equals("s") && !tipoMov.equals("n") ) {
+			
+			System.out.print("Move na diagonal?[s][n]: ");
+			tipoMov = leitor.nextLine();
+		
+		}
+		if(tipoMov.equals("s"))
+			return true;
+		if(tipoMov.equals("n"))
+			return false;
+		return false;
+	}
+	
 
 	public boolean check_state() {
 		return isState();
@@ -162,7 +177,8 @@ public class State {
 			d1 = ListD.get(j);
 			d1.setMove(false);
 
-			if (this.m1.nextIsWall(x, y, h1, e1)) { // Se for parede, jï¿½ nï¿½o verifica os proximos dragoes pq nï¿½o depende
+			if (this.m1.nextIsWall(x, y, h1, e1)) { // Se for parede, jï¿½ nï¿½o verifica os proximos dragoes pq nï¿½o
+													// depende
 													// de d1
 				Imprimir = "Ha Parede";
 				j = ListD.size();
@@ -212,20 +228,20 @@ public class State {
 			return true;
 		return false;
 	}
-	
-	public boolean MoveDragonInDiagonal(int num,Dragon d1) {
-		if(d1.DragonIsInCorner(d1.testmov_dragon_x(num),d1.testmov_dragon_Y(num))!=0) {
+
+	public boolean MoveDragonInDiagonal(int num, Dragon d1) {
+		if (d1.DragonIsInCorner(d1.testmov_dragon_x(num), d1.testmov_dragon_Y(num)) != 0) {
 			d1.mov_dragon(num);
-			if(m1.CorrectMoveDragon(h1, e1, d1, s1, d1.SecondMoveDragon(num, d1.DragonIsInCorner(d1.getX(), d1.getY())))) {
+			if (m1.CorrectMoveDragon(h1, e1, d1, s1,
+					d1.SecondMoveDragon(num, d1.DragonIsInCorner(d1.getX(), d1.getY())))) {
 				d1.mov_dragon(d1.SecondMoveDragon(num, d1.DragonIsInCorner(d1.getX(), d1.getY())));
 				return true;
-			}
-			else 
-				d1.mov_dragon(d1.movInvers(num)); //repõe posição de dragão se não conseguir mover na diagonal
+			} else
+				d1.mov_dragon(d1.movInvers(num)); // repõe posição de dragão se não conseguir mover na diagonal
 		}
 		return false;
 	}
-	
+
 	public void movDragon() {
 		Random rnd = new Random();
 
@@ -235,71 +251,15 @@ public class State {
 			do {
 				num = (rnd.nextInt(4) + 1);
 			} while (!m1.CorrectMoveDragon(h1, e1, d1, s1, num));
-			
-			if(!MoveDragonInDiagonal(num,d1)) 
+
+			if(this.getM1().getTipoMov()) { // é para mover na diagonal
+				if (!MoveDragonInDiagonal(num, d1))
+					d1.mov_dragon(num);
+				
+			} else { // não é para mover na diagonal
 				d1.mov_dragon(num);
-			
-			
-			/*d1.mov_dragon(num);
-			//////////// VERIFICA SE PODE ANDAR NA DIAGONAL NOS CANTOS/////////
-			if (d1.DragonIsInCornerTL(d1)) { // verifica se estï¿½ no canto TOP LEFT
-				System.out.println(num);
-				switch (num) {
-				case 1:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 2)) {
-						d1.mov_dragon(2);
-					}
-					break;
-				case 4:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 3)) {
-						d1.mov_dragon(3);
-					}
-					break;
-				}
-			} else if (d1.DragonIsInCornerBL(d1)) {// verifica se estï¿½ no canto BOTTOM LEFT
-				System.out.println(num);
-				switch (num) {
-				case 2:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 1)) {
-						d1.mov_dragon(1);
-					}
-					break;
-				case 3:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 2)) {
-						d1.mov_dragon(2);
-					}
-					break;
-				}
-			} else if (d1.DragonIsInCornerTR(d1)) {// verifica se estï¿½ no canto TOP RIGHT
-				System.out.println(num);
-				switch (num) {
-				case 1:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 4)) {
-						d1.mov_dragon(4);
-					}
-					break;
-				case 2:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 3)) {
-						d1.mov_dragon(3);
-					}
-					break;
-				}
-			} else if (d1.DragonIsInCornerBR(d1)) {// verifica se estï¿½ no canto BOTTOM RIGHT
-				System.out.println(num);
-				switch (num) {
-				case 2:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 1)) {
-						d1.mov_dragon(1);
-					}
-					break;
-				case 3:
-					if (m1.CorrectMoveDragon(h1, e1, d1, s1, 4)) {
-						d1.mov_dragon(4);
-					}
-					break;
-				}
-			}*/
-	///////////////////////////////////////////////////////////////
+			}
+
 			if (!m1.CheckHeroLife(h1, d1)) // dragao mata o Hero
 				this.setState(false);
 		}

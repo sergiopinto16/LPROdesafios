@@ -10,10 +10,13 @@ public class Mapa {
 	private char[][] map ;
 
 	private boolean finish;
+	private boolean tipoMov;
+	
 	
 	public Mapa(char [][] mapa) {
 		this.map=mapa.clone();
 		this.finish=false;
+		this.tipoMov = false; //nao anda na diagonal
 	}
 
 	// metodos
@@ -271,6 +274,13 @@ public class Mapa {
 	}
 	public void setMap(char[][] mapa) {
 		this.map=mapa.clone();
+	}
+	public boolean getTipoMov() {
+		return tipoMov;
+	}
+
+	public void setTipoMov(boolean tipoMov) {
+		this.tipoMov = tipoMov;
 	}
 
 }

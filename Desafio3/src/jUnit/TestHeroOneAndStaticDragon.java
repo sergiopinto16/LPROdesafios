@@ -369,6 +369,7 @@ public class TestHeroOneAndStaticDragon { //s
 		stat.setM1(new Mapa(map));
 		stat.setState(true);
 		
+		
 		stat.MoveDragonInDiagonal(1,stat.getListD().get(0)); //move dragon 1 na diagonal primeiro para "w"
 		assertEquals(stat.getD1(0).getX(), 1);
 		assertEquals(stat.getD1(0).getY(), 2);

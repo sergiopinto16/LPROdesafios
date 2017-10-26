@@ -8,6 +8,12 @@ package maze.gui;
 import dkeep.logic.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.JLabel;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.SwingConstants;
+import javax.swing.JCheckBox;
 
 /**
  *
@@ -22,19 +28,19 @@ public class Interface extends javax.swing.JFrame {
      * Creates new form Interface
      */
     public Interface() {
-        dragonPos = new int[6][2];
-        dragonPos[0][0] = 3;
-        dragonPos[0][1] = 1;
-        dragonPos[1][0] = 8;
-        dragonPos[1][1] = 8;
-        dragonPos[2][0] = 1;
-        dragonPos[2][1] = 7;
-        dragonPos[3][0] = 8;
-        dragonPos[3][1] = 1;
-        dragonPos[4][0] = 1;
-        dragonPos[4][1] = 8;
-        dragonPos[5][0] = 5;
-        dragonPos[5][1] = 6;
+    	dragonPos=new int[6][2];
+		dragonPos[0][0]=4;
+		dragonPos[0][1]=1;
+		dragonPos[1][0]=8;
+		dragonPos[1][1]=8;
+		dragonPos[2][0]=1;
+		dragonPos[2][1]=7;
+		dragonPos[3][0]=8;
+		dragonPos[3][1]=1;
+		dragonPos[4][0]=8;
+		dragonPos[4][1]=4;
+		dragonPos[5][0]=5;
+		dragonPos[5][1]=6;
 
         initComponents();
         setLocationRelativeTo(null); //coloca no centro do ecra
@@ -60,7 +66,8 @@ public class Interface extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtArea = new javax.swing.JTextArea();
         btnExit = new javax.swing.JButton();
-
+        checkBox = new javax.swing.JCheckBox();
+        
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Number of Dragons");
@@ -125,80 +132,83 @@ public class Interface extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
+        
+        checkBox = new JCheckBox("New check box");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnLeft)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                                .addComponent(btnRight)
-                                .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btnUp)
-                                        .addGap(85, 85, 85))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(btnExit)
-                                            .addComponent(btnDown))
-                                        .addGap(73, 73, 73))))))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(435, Short.MAX_VALUE)
-                    .addComponent(btnNewGame)
-                    .addGap(49, 49, 49)))
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        				.addGroup(layout.createSequentialGroup()
+        					.addComponent(lblMessage, GroupLayout.PREFERRED_SIZE, 344, GroupLayout.PREFERRED_SIZE)
+        					.addGap(0, 225, Short.MAX_VALUE))
+        				.addGroup(layout.createSequentialGroup()
+        					.addComponent(jLabel1)
+        					.addGap(18)
+        					.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, 74, GroupLayout.PREFERRED_SIZE)
+        					.addContainerGap(366, Short.MAX_VALUE))
+        				.addGroup(layout.createSequentialGroup()
+        					.addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 355, GroupLayout.PREFERRED_SIZE)
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        						.addGroup(layout.createSequentialGroup()
+        							.addComponent(btnLeft)
+        							.addPreferredGap(ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+        							.addComponent(btnRight)
+        							.addContainerGap())
+        						.addGroup(layout.createSequentialGroup()
+        							.addGap(0, 65, Short.MAX_VALUE)
+        							.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        								.addGroup(layout.createSequentialGroup()
+        									.addComponent(btnUp)
+        									.addGap(85))
+        								.addGroup(layout.createSequentialGroup()
+        									.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        										.addComponent(btnExit)
+        										.addComponent(btnDown))
+        									.addGap(73))))))
+        				.addGroup(layout.createSequentialGroup()
+        					.addComponent(checkBox)
+        					.addPreferredGap(ComponentPlacement.RELATED, 312, Short.MAX_VALUE)
+        					.addComponent(btnNewGame)
+        					.addGap(49))))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(btnUp)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnLeft)
-                            .addComponent(btnRight))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnDown)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnExit)
-                        .addGap(61, 61, 61))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(68, 68, 68)
-                    .addComponent(btnNewGame)
-                    .addContainerGap(304, Short.MAX_VALUE)))
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(jLabel1)
+        				.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(9)
+        					.addComponent(checkBox)
+        					.addGap(5)
+        					.addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 285, GroupLayout.PREFERRED_SIZE)
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addComponent(lblMessage, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        					.addContainerGap())
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(80)
+        					.addComponent(btnUp)
+        					.addPreferredGap(ComponentPlacement.UNRELATED)
+        					.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        						.addComponent(btnLeft)
+        						.addComponent(btnRight))
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addComponent(btnDown)
+        					.addPreferredGap(ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+        					.addComponent(btnExit)
+        					.addGap(61))))
+        		.addGroup(layout.createSequentialGroup()
+        			.addGap(68)
+        			.addComponent(btnNewGame)
+        			.addContainerGap(309, Short.MAX_VALUE))
         );
+        getContentPane().setLayout(layout);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -211,10 +221,16 @@ public class Interface extends javax.swing.JFrame {
         s1 = new State();
         int numDragons = Integer.parseInt(txtNumber.getText());
         if (numDragons > 6 || numDragons < 1) {
-            JOptionPane.showMessageDialog(null, "Numero de DragÃµes entre 1 e 6");
+            JOptionPane.showMessageDialog(null, "Numero de Dragões entre 1 e 6");
             return;
-        }
+        }  
         s1.new_game(numDragons, dragonPos);
+        if(checkBox.isSelected()) {
+        	s1.getM1().setTipoMov(true);
+        }
+        else {
+        	s1.getM1().setTipoMov(false);
+        }
        imprimir(s1.getE1(), s1.getListD(), s1.getH1(), s1.getS1(),s1.getM1().getMap());
 
 
@@ -353,5 +369,5 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JLabel lblMessage;
     private javax.swing.JTextArea txtArea;
     private javax.swing.JTextField txtNumber;
-    // End of variables declaration//GEN-END:variables
+    private JCheckBox checkBox;
 }
