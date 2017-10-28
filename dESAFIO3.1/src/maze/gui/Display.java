@@ -32,7 +32,6 @@ public class Display extends JPanel {
 	private ImageIcon sword;
 	private ImageIcon wall;
 	private ImageIcon hero;
-	private ImageIcon background;
 //----------Atributos auxiliares-----
 	private boolean ativo;
 	private int numDragons;
@@ -50,7 +49,6 @@ public class Display extends JPanel {
 		this.hero = new ImageIcon(Display.class.getResource("hero.jpg"));
 		this.sword = new ImageIcon(Display.class.getResource("sword.png"));
 		this.wall = new ImageIcon(Display.class.getResource("wall.png"));
-		this.background = new ImageIcon(Display.class.getResource("background.jpg"));
 	}
 //--------------Definir Posições dos Elementos na interface-----
 	public void PosHero(int x,int y) {
@@ -84,9 +82,9 @@ public class Display extends JPanel {
 		super.paintComponent(g);
 		setBounds(30, 80, 400, 350);
 		//this.background.paintIcon(this,g,0,0);
+		paintWall(g);
 		if(this.ativo)
 			{
-		paintWall(g);
 		this.door.paintIcon(this, g, getY_door()*getY_pixel(), getX_door()*getX_pixel());
 		this.hero.paintIcon(this, g, getY_hero()*getY_pixel(), getX_hero()*getX_pixel());
 		paintSword(g); 

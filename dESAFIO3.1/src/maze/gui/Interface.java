@@ -10,12 +10,15 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.GroupLayout.Alignment;
+import javax.swing.ImageIcon;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.SwingConstants;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
 
 /**
  *
@@ -32,6 +35,8 @@ public class Interface extends javax.swing.JFrame {
      * Creates new form Interface
      */
     public Interface() {
+    	setResizable(false);
+    	setTitle("Game of Dragons");
     	dragonPos=new int[6][2];
 		dragonPos[0][0]=4;
 		dragonPos[0][1]=1;
@@ -61,8 +66,10 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel1.setFont(new Font("Courier New", Font.PLAIN, 15));
         txtNumber = new javax.swing.JTextField();
         btnLeft = new javax.swing.JButton();
+        btnLeft.setToolTipText("");
         btnLeft.setEnabled(false);
         btnNewGame = new javax.swing.JButton();
         btnUp = new javax.swing.JButton();
@@ -122,7 +129,7 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        lblMessage.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblMessage.setFont(new Font("Courier New", Font.BOLD, 18)); // NOI18N
         lblMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMessage.setText("Can start a New Game");
 
@@ -134,6 +141,7 @@ public class Interface extends javax.swing.JFrame {
         });
         
         checkDiagonally = new JCheckBox("Diagonnaly");
+        checkDiagonally.setFont(new Font("Courier New", Font.PLAIN, 15));
         
         painel = new Display();
         painel.setBackground(Color.WHITE);
@@ -143,81 +151,83 @@ public class Interface extends javax.swing.JFrame {
         layout.setHorizontalGroup(
         	layout.createParallelGroup(Alignment.LEADING)
         		.addGroup(layout.createSequentialGroup()
-        			.addContainerGap()
+        			.addGap(6)
         			.addGroup(layout.createParallelGroup(Alignment.LEADING)
         				.addGroup(layout.createSequentialGroup()
         					.addGap(12)
         					.addComponent(lblMessage, GroupLayout.PREFERRED_SIZE, 344, GroupLayout.PREFERRED_SIZE)
         					.addContainerGap())
-        				.addGroup(layout.createParallelGroup(Alignment.TRAILING)
-        					.addGroup(layout.createSequentialGroup()
-        						.addComponent(jLabel1)
-        						.addGap(18)
-        						.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, 74, GroupLayout.PREFERRED_SIZE)
-        						.addContainerGap(576, Short.MAX_VALUE))
-        					.addGroup(layout.createSequentialGroup()
-        						.addGap(24)
-        						.addGroup(layout.createParallelGroup(Alignment.TRAILING)
-        							.addGroup(layout.createSequentialGroup()
-        								.addComponent(checkDiagonally)
-        								.addPreferredGap(ComponentPlacement.RELATED, 490, Short.MAX_VALUE))
-        							.addGroup(layout.createSequentialGroup()
-        								.addComponent(painel, GroupLayout.PREFERRED_SIZE, 377, GroupLayout.PREFERRED_SIZE)
-        								.addGap(18)
-        								.addGroup(layout.createParallelGroup(Alignment.LEADING)
-        									.addGroup(layout.createSequentialGroup()
-        										.addPreferredGap(ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(24)
+        					.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        						.addGroup(layout.createSequentialGroup()
+        							.addComponent(jLabel1)
+        							.addGap(34)
+        							.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, 74, GroupLayout.PREFERRED_SIZE)
+        							.addContainerGap())
+        						.addGroup(layout.createSequentialGroup()
+        							.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        								.addGroup(layout.createSequentialGroup()
+        									.addComponent(checkDiagonally)
+        									.addPreferredGap(ComponentPlacement.RELATED, 637, Short.MAX_VALUE))
+        								.addGroup(layout.createSequentialGroup()
+        									.addComponent(painel, GroupLayout.PREFERRED_SIZE, 377, GroupLayout.PREFERRED_SIZE)
+        									.addGroup(layout.createParallelGroup(Alignment.LEADING)
         										.addGroup(layout.createParallelGroup(Alignment.TRAILING)
-        											.addGroup(layout.createSequentialGroup()
+        											.addGroup(Alignment.LEADING, layout.createSequentialGroup()
+        												.addPreferredGap(ComponentPlacement.RELATED, 251, Short.MAX_VALUE)
+        												.addComponent(btnRight, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+        												.addGap(7))
+        											.addGroup(Alignment.LEADING, layout.createSequentialGroup()
+        												.addGap(74)
         												.addGroup(layout.createParallelGroup(Alignment.LEADING)
-        													.addComponent(btnExit)
-        													.addComponent(btnDown)
-        													.addComponent(btnUp))
-        												.addGap(12))
+        													.addComponent(btnNewGame, GroupLayout.PREFERRED_SIZE, 291, GroupLayout.PREFERRED_SIZE)
+        													.addComponent(btnLeft, GroupLayout.PREFERRED_SIZE, 101, GroupLayout.PREFERRED_SIZE)
+        													.addComponent(btnExit, GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE))
+        												.addPreferredGap(ComponentPlacement.RELATED))
         											.addGroup(layout.createSequentialGroup()
-        												.addComponent(btnNewGame)
-        												.addGap(3))))
-        									.addGroup(layout.createSequentialGroup()
-        										.addGap(18)
-        										.addComponent(btnLeft)))))
-        						.addPreferredGap(ComponentPlacement.RELATED)
-        						.addComponent(btnRight)
-        						.addGap(106)))))
+        												.addPreferredGap(ComponentPlacement.RELATED)
+        												.addComponent(btnUp, GroupLayout.PREFERRED_SIZE, 123, GroupLayout.PREFERRED_SIZE)
+        												.addGap(92)))
+        										.addGroup(Alignment.TRAILING, layout.createSequentialGroup()
+        											.addPreferredGap(ComponentPlacement.RELATED)
+        											.addComponent(btnDown, GroupLayout.PREFERRED_SIZE, 162, GroupLayout.PREFERRED_SIZE)
+        											.addGap(75)))))
+        							.addGap(189))))))
         );
         layout.setVerticalGroup(
         	layout.createParallelGroup(Alignment.LEADING)
         		.addGroup(layout.createSequentialGroup()
         			.addContainerGap()
         			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
-        				.addComponent(jLabel1)
-        				.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        				.addComponent(txtNumber, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+        				.addComponent(jLabel1))
+        			.addGap(9)
+        			.addComponent(checkDiagonally)
+        			.addGap(18)
         			.addGroup(layout.createParallelGroup(Alignment.LEADING)
         				.addGroup(layout.createSequentialGroup()
-        					.addGap(9)
-        					.addComponent(checkDiagonally)
+        					.addGap(5)
+        					.addComponent(btnNewGame, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+        					.addGap(15)
+        					.addComponent(btnUp, GroupLayout.PREFERRED_SIZE, 61, GroupLayout.PREFERRED_SIZE)
+        					.addPreferredGap(ComponentPlacement.RELATED)
+        					.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        						.addComponent(btnLeft, GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
+        						.addComponent(btnRight, GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE))
         					.addGap(18)
-        					.addComponent(painel, GroupLayout.PREFERRED_SIZE, 315, GroupLayout.PREFERRED_SIZE))
-        				.addGroup(layout.createSequentialGroup()
-        					.addGap(37)
-        					.addComponent(btnNewGame)
-        					.addPreferredGap(ComponentPlacement.UNRELATED)
-        					.addComponent(btnUp)
-        					.addGap(18)
-        					.addGroup(layout.createParallelGroup(Alignment.BASELINE)
-        						.addComponent(btnRight)
-        						.addComponent(btnLeft))
-        					.addGap(18)
-        					.addComponent(btnDown)
-        					.addPreferredGap(ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
-        					.addComponent(btnExit)))
-        			.addGap(32)
+        					.addComponent(btnDown, GroupLayout.PREFERRED_SIZE, 74, GroupLayout.PREFERRED_SIZE)
+        					.addGap(41)
+        					.addComponent(btnExit, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE))
+        				.addComponent(painel, GroupLayout.PREFERRED_SIZE, 315, GroupLayout.PREFERRED_SIZE))
+        			.addGap(9)
         			.addComponent(lblMessage, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
         			.addContainerGap())
         );
-        painel.setLayout(null);
+   //     painel.setLayout(null);
         getContentPane().setLayout(layout);
-
-        pack();
+   
+     pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberActionPerformed
@@ -237,16 +247,40 @@ public class Interface extends javax.swing.JFrame {
                }
                imprimir(s1.getE1(), s1.getListD(), s1.getH1(), s1.getS1(),s1.getM1().getMap());
             }
+           
             if (s1.getM1().getFinish() || !s1.getH1().isLife()) {
-            	btnDown.setEnabled(false);
-            	btnUp.setEnabled(false);
-            	btnRight.setEnabled(false);
-            	btnLeft.setEnabled(false);
-
-            	return;
-            }
+            	controlButtons(false);
+            } 
+            imprimirStatus();	
         }
     }
+
+private void controlButtons(boolean var) {
+	btnDown.setEnabled(var);
+	btnUp.setEnabled(var);
+	btnRight.setEnabled(var);
+	btnLeft.setEnabled(var);
+}
+
+private void imprimirStatus() {
+	 if(!s1.getH1().isLife()) {
+		lblMessage.setText("GAME OVER!! TRY AGAIN ");
+	}else if(!s1.getH1().isHeroHas()) {
+	lblMessage.setText("PICK UP THE SWORD");
+	} else if(s1.getM1().getFinish()) {
+		lblMessage.setText("YOU WIN!!!!");
+	} else if(s1.getE1().getSaida() == painel.getNumDragons()) {
+			lblMessage.setText("DOOR OPEN !!");
+	}
+	else if(s1.getH1().isHeroHas()) {
+		lblMessage.setText("KILL ALL DRAGONS !!");
+	}
+	
+	
+	else {
+		lblMessage.setText("CAN START A NEW GAME");
+	}
+}
 
     private void imprimir(Exiit e1, ArrayList<Dragon> dl1, Hero h1, Sword s1,char [][] map) {
        
@@ -272,12 +306,10 @@ public class Interface extends javax.swing.JFrame {
         gameLogic("w");
     }//GEN-LAST:event_btnUpActionPerformed
     private void btnNewGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewGameActionPerformed
-    	btnDown.setEnabled(true);
-    	btnUp.setEnabled(true);
-    	btnRight.setEnabled(true);
-    	btnLeft.setEnabled(true);
+    	controlButtons(true);
     	painel.setAtivo(true);
- 	   this.painel.changeImage("door_closed.jpg");
+    	
+ 	    this.painel.changeImage("door_closed.jpg");
 
     	s1 = new State();
         int numDragons = Integer.parseInt(txtNumber.getText());
@@ -288,7 +320,7 @@ public class Interface extends javax.swing.JFrame {
         }  
         painel.setNumDragons(numDragons);
         s1.new_game(numDragons, dragonPos);
-        
+        imprimirStatus();
    //-------VERIFICA SE É PARA ANDAR NA DIAGONAL--------------------------------------
         if(checkDiagonally.isSelected()) {
         	s1.getM1().setTipoMov(true);
@@ -298,9 +330,6 @@ public class Interface extends javax.swing.JFrame {
         }
    //----------------------------------------------------------------------------------
     imprimir(s1.getE1(), s1.getListD(), s1.getH1(), s1.getS1(),s1.getM1().getMap());
-      /* this.painel.PosExit(s1.getE1().getX(), s1.getE1().getY());
-       this.painel.PosSword(s1.getS1().getX(), s1.getS1().getY());
-       this.painel.PosHero(s1.getH1().getX(), s1.getH1().getY());*/
         
     }
     private void btnRightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRightActionPerformed
